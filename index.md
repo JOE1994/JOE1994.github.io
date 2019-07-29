@@ -1,5 +1,8 @@
+---
+layout: default
+title: home
+---
+
 # Joe's blog
-## HELLO
-### HELLO
-#### HELLO
+
 

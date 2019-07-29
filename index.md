@@ -1,3 +1,0 @@
-# Joe's blog
-## HEYHO
-

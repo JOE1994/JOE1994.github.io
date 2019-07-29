@@ -9,7 +9,4 @@ github_username:  JOE1994
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
-paginate: 10
-paginate_path: /
-
 theme: jekyll-theme-dinky

@@ -7,6 +7,7 @@ description: > # this means to ignore newlines until "baseurl:"
 # social links
 github_username:  JOE1994
 
+show_downloads: false
 show_excerpts: true # set to false to remove excerpts on the homepage
 
 theme: jekyll-theme-dinky

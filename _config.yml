@@ -1,6 +1,7 @@
 title: Yet another blog on the web
 author: Youngsuk Kim
 email: ykim837@gatech.edu
+timezone: 'America/New_York'
 description: > # this means to ignore newlines until "baseurl:"
   Collection of regular writings of what I've learned so far.
 # social links
@@ -8,6 +9,7 @@ github_username:  JOE1994
 
 show_excerpts: true # set to false to remove excerpts on the homepage
 
-timezone: 'America/New_York'
+paginate: 10
+paginate_path: /
 
 theme: jekyll-theme-dinky

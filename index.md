@@ -7,8 +7,8 @@ layout: default
 
 ## $whoami
 
-## $research_interests
+## $ls research_interests
 
-## $hobbies
+## $ls hobbies
 
 

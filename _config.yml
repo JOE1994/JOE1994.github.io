@@ -10,4 +10,4 @@ github_username:  JOE1994
 show_downloads: false
 show_excerpts: false # set to false to remove excerpts on the homepage
 
-# theme: jekyll-theme-dinky
+theme: jekyll-theme-dinky

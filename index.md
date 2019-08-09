@@ -1,6 +1,6 @@
 ---
 title: Youngsuk's blog
-layout: default
+layout: main
 ---
 
 <div id="console"> <!-- DIV block for console-like theme output -->

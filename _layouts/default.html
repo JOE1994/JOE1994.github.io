@@ -4,10 +4,10 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/sidebar_main.css">
+
 {% seo %}
   </head>
 
@@ -15,18 +15,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <header>
-      <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
-      </div>
-    </header>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $('#sidebarCollapse').on('click', function () {
+              $('#sidebar').toggleClass('active');
+          });
+      });
+    </script>
 
     <!-- Sidebar  -->
     <nav id="sidebar">

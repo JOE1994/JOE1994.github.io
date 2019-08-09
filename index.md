@@ -1,5 +1,5 @@
 ---
-title: My First Page
+title: Youngsuk's blog
 layout: default
 ---
 

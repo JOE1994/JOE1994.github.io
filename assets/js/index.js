@@ -98,7 +98,7 @@ function replaceUrls(text) {
 }
 
 Typer.speed=3;
-Typer.file="assets/txt/youngsuk_main.txt";
+Typer.file="assets/html/youngsuk_main.html";
 Typer.init();
  
 var timer = setInterval("t();", 30);

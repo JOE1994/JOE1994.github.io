@@ -10,9 +10,5 @@ layout: main
   You can also give your email ID for contacting you, feel free to send me an email at <a id="a_console" href="mailto:ykim837@gatech.edu">ykim837@gatech.edu</a>.
 </div> 
 
-# Welcome to lonelyjoey's blog
-
-## $ls research_interests
-
 
 

@@ -10,7 +10,7 @@ body {
 	margin-left:auto; 
 	margin-right:auto;
 	margin-top:40px;
-	font-size:17px;
+	font-size:18px;
 }
 
 a {
@@ -18,15 +18,15 @@ a {
 	text-decoration: none;
 }
 
-#a {
+.a {
 	color: #0f0;
 }
 
-#c {
+.c {
 	color: #0bc;
 }
 
-#b {
+.b {
 	color: #ff0096;
 }
 

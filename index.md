@@ -9,4 +9,4 @@ Hi, I'm a CS PhD student at Georgia Tech. (since May 2019)<br>
 <span class="b">Research interests</span> : programming language design <br>
 <span class="b">Email</span> : <a href="mailto:ykim837@gatech.edu">ykim837@gatech.edu</a> <br> 
 <span class="b">Office</span> : KACB 2319
-<img style="vertical-align:middle" src="photos/neutral.PNG">
+<img style="vertical-align:middle" src="../photos/neutral.PNG">

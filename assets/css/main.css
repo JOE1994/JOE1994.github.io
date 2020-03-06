@@ -1,10 +1,10 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
-  padding-top: 3.5rem;
+
 }
 
 #console {
-  background-color:#401637;
+  background-color: #000000;
 	font-family: courier, monospace;
 	color: #fff;
 	margin-left:auto; 
@@ -31,11 +31,15 @@ a {
 }
 
 #k {
-    	animation: change 1s;
+    animation: change 1s;
 }
 
 #op{
-    	color: #888888
+    color: #888888
+}
+
+img.joebutton:hover{
+	opacity: 0.65;
 }
 
 @keyframes change {

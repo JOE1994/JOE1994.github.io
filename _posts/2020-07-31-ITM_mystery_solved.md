@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+author: lonelyjoe
 ---
 
 In the source code below, the first `iprintln!` gets caught in a spinlock forever, while the second `iprintln!` transmits an ITM packet as expected.

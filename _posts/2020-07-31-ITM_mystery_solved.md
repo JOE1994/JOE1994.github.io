@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+
 In the source code below, the first `iprintln!` gets caught in a spinlock forever, while the second `iprintln!` transmits an ITM packet as expected.
 I didn't have answers to why the two `iprintln!` were behaving differently until today.
 

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<inline>
+Select Date :
+<input type="date"
+       min="2021-12-26"
+       {% if page.url contains "workout_diary_challenge" %}
+         value="{{ page.date }}"
+       {% endif %}
+       required>
+</inline>
+
+<main>
+  {{ content }}
+</main>
+
+<script>
+  const date_input = document.querySelector('input');
+  date_input.addEventListener('input', e => {
+    let url = "{{ site.baseurl }}/workout_diary_challenge/data/markdown/" + e.target.value + ".html";
+    fetch(url)
+    .then(response => {
+      if (response.ok)
+        window.location.href = url;
+      else
+        alert("Workout diary for the selected date is unavailable.");
+    });
+  });
+</script>

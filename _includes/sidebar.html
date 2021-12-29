@@ -1,0 +1,20 @@
+<div class="sidebar">
+    <div class="container sidebar-sticky">
+      <div class="sidebar-about">
+        <h1>
+          <a href="{{ site.baseurl }}">
+            {{ site.title }}
+          </a>
+        </h1>
+        <p class="lead">{{ site.description }}</p>
+      </div>
+  
+      <nav class="sidebar-nav">
+        {% for item in site.data.navigation %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ item.link }}">
+            {{ item.name }}
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
+  </div>

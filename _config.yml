@@ -1,4 +1,4 @@
-title: Youngsuk Kim
+title: JOE1994
 author: Youngsuk Kim
 email: joseph942010@gmail.com
 timezone: 'America/New_York'
@@ -6,3 +6,25 @@ github_username:  JOE1994
 
 show_downloads: false
 show_excerpts: false # set to false to remove excerpts on the homepage
+
+baseurl: ""
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed

@@ -1,0 +1,24 @@
+{
+    "push-ups" : {
+        "cnt" : [15, 15, 15, 15, 15, 15, 15, 15, 15, 15]
+    },
+    "squat" : {
+        "cnt" : [15, 20, 18, 15, 15, 15, 20, 20, 24, 20, 23, 20]
+    },
+    "lat pull down" : {
+        "weight" : 70,
+        "cnt" : [13, 12, 10, 12, 8]
+    },
+    "chest press" : {
+        "weight" : 110,
+        "cnt" : [8, 8, 8]
+    },
+    "dumbell shoulder press" : {
+        "weight" : 20,
+        "cnt" : [12, 14, 12]
+    },
+    "dumbbell side lateral raise" : {
+        "weight" : 15,
+        "cnt" : [12, 13, 12]
+    }
+}

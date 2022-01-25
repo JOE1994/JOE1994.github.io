@@ -34,8 +34,8 @@ def gen_front_matter(date_str: str) -> str:
 
 def gen_markdown_table(workout_dict: dict) -> str:
     markdown_str = (
-        '|                             | Weight (lbs) | Set1 | Set2 | Set3 | Set4 | Set5 | Set6 | Set7 | Set8 | Set9 | Set10 | Set11 | Set12 |\n'
-        '|-----------------------------|--------------|------|------|------|------|------|------|------|------|------|-------|-------|-------|\n'
+        '|  | Weight (lbs) | Set1 | Set2 | Set3 | Set4 | Set5 | Set6 | Set7 | Set8 | Set9 | Set10 | Set11 | Set12 |\n'
+        '|--|--------------|------|------|------|------|------|------|------|------|------|-------|-------|-------|\n'
     )
     row_fmt = '| {task} | {weight_in_lbs} | {s1} | {s2} | {s3} | {s4} | {s5} | {s6} | {s7} | {s8} | {s9} | {s10} | {s11} | {s12} |\n'
 

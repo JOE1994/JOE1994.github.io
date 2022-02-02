@@ -3,6 +3,7 @@
 import datetime
 import json
 import os
+import subprocess
 import sys
 
 def is_valid_date_str(date_str: str) -> bool:
@@ -79,4 +80,9 @@ if __name__ == '__main__':
         with open('data/markdown/' + date_str + '.md', 'w') as markdown_f:
             markdown_f.write(markdown_str)
         
-        print(f'[info] Generated markdown from `{date_str}.json`\n')
+        print(f'[info] Generated markdown from `{date_str}.json`')
+
+    ls = subprocess.Popen(['ls', 'data/json'], stdout=subprocess.PIPE)
+    how_many_days_so_far = subprocess.check_output(['wc', '-l'], stdin=ls.stdout).decode('utf-8')[:-1]
+    subprocess.run(['git', 'add', 'data'])
+    subprocess.run(['git', 'commit', '-m', '[workout] Day' + how_many_days_so_far])

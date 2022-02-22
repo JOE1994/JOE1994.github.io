@@ -1,0 +1,29 @@
+{
+    "push-ups" : {
+        "cnt" : [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20]
+    },
+    "lat pull down" : {
+        "weight" : 80,
+        "cnt" : [8, 10, 8, 8]
+    },
+    "chest press" : {
+        "weight" : 110,
+        "cnt" : [10, 8, 10, 8, 10]
+    },
+    "dumbell shoulder press" : {
+        "weight" : 25,
+        "cnt" : [10, 10, 10]
+    },
+    "leg press" : {
+        "weight" : 190,
+        "cnt" : [8, 10]
+    },
+    "dumbbell side lateral raise" : {
+        "weight" : 15,
+        "cnt" : [10, 10, 10, 10]
+    },
+    "right arm dumbbell curl" : {
+        "weight" : 20,
+        "cnt" : [10]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "lat pull down" : {
+        "weight" : 80,
+        "cnt" : [10, 10, 10]
+    },
+    "chest press" : {
+        "weight" : 115,
+        "cnt" : [10, 10, 10, 10]
+    },
+    "leg press" : {
+        "weight" : 190,
+        "cnt" : [12, 11, 10, 10]
+    },
+    "dumbell shoulder press" : {
+        "weight" : 30,
+        "cnt" : [12, 10, 11]
+    },
+    "dumbbell side lateral raise" : {
+        "weight" : 20,
+        "cnt" : [8]
+    }
+}

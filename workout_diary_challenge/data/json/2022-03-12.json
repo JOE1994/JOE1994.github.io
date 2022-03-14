@@ -1,0 +1,13 @@
+{
+    "push-ups" : {
+        "cnt" : [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 10]
+    },
+    "dumbbell side lateral raise" : {
+        "weight" : 17.5,
+        "cnt" : [10, 10, 10, 10]
+    },
+    "leg extension" : {
+        "weight" : 70,
+        "cnt" : [10, 10, 10, 10]
+    }
+}

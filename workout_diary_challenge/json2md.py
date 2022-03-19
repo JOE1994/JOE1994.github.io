@@ -1,4 +1,4 @@
-#!/c/Users/Public/anaconda3/envs/py37/python
+#!/usr/bin/env python3
 
 import datetime
 import json

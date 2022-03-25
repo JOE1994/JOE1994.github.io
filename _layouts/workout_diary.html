@@ -20,7 +20,7 @@ Select Date :
   const date_input = document.querySelector('input');
   date_input.addEventListener('input', e => {
     let url = "{{ site.baseurl }}/workout_diary_challenge/data/markdown/" + e.target.value + ".html";
-    fetch(url)
+    fetch(url, {method: 'HEAD'})
     .then(response => {
       if (response.ok)
         window.location.href = url;

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<inline>
+Select Date :
+<input type='date'
+       min='2021-12-26'
+       required>
+</inline>
+
+<br>
+<br>
+<div id='workout_diary_content'></div>
+
+<script>
+  const parser = new DOMParser();
+  const date_input = document.querySelector('input');
+  date_input.addEventListener('input', e => {
+    let url = '{{ site.baseurl }}/workout_diary_challenge/data/html_tables/' + e.target.value + '.html';
+    fetch(url)
+    .then(response => {
+      if (response.ok)
+        return response.text();
+      throw 404;
+    })
+    .then(html_content => {
+      let doc = parser.parseFromString(html_content, 'text/html');
+      document.querySelector('#workout_diary_content').innerHTML = doc.body.innerHTML;
+    })
+    .catch(e => {
+      alert('Workout diary for the chosen date is unavailable!');
+    });
+  });
+</script>

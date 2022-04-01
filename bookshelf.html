@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<table>
+    <tr>
+        <th>Book Title</th>
+        <th>ISBN</th>
+        <th>My Progress</th>
+        <th>Finished Date</th>
+    </tr>
+{% for book in site.data.bookshelf %}
+    <tr>
+        <td>{{ book.name }}</td>
+        <td>{{ book.isbn }}</td>
+        <td><progress value="{{ book.progress }}" max="{{ book.tot_pages }}"></progress></td>
+        <td> {{book.finished_date}} </td>
+    </tr>
+{% endfor %}
+</table>
+
+<script>
+
+</script>

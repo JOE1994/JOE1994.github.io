@@ -1,0 +1,11 @@
+- name: 'Hands-on Rust: Effective Learning through 2D Game Development and Play'
+  isbn: 978-1680508161
+  progress: 100
+  tot_pages: 478
+  finished_date: ""
+
+- name: 'HTTP: The Definitive Guide'
+  isbn: 978-1565925090
+  progress: 102
+  tot_pages: 596
+  finished_date: ""

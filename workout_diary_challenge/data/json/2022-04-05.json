@@ -1,0 +1,17 @@
+{
+    "push-ups" : {
+        "cnt" : [20]
+    },
+    "dumbbell side lateral raise" : {
+        "weight" : 17.5,
+        "cnt" : [15, 10, 10, 10, 10]
+    },
+    "leg extension" : {
+        "weight" : 70,
+        "cnt" : [11, 12, 12, 12, 12]
+    },
+    "dumbell shoulder press" : {
+        "weight" : 30,
+        "cnt" : [10, 10, 10, 10, 10]
+    }
+}

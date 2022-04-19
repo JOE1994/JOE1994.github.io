@@ -1,0 +1,17 @@
+{
+    "cycle" : {
+        "cnt" : ["2.69 miles"]
+    },
+    "dumbbell side lateral raise" : {
+        "weight" : 17.5,
+        "cnt" : [10, 10, 10, 10]
+    },
+    "dumbell shoulder press" : {
+        "weight" : 35,
+        "cnt" : [10, 10, 11, 10]
+    },
+    "leg extension" : {
+        "weight" : 70,
+        "cnt" : [10, 10, 10, 10]
+    }
+}

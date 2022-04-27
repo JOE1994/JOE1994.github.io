@@ -1,0 +1,13 @@
+{
+    "dumbbell side lateral raise" : {
+        "weight" : 17.5,
+        "cnt" : [12, 12, 12, 12, 12]
+    },
+    "leg curl" : {
+        "weight" : 85,
+        "cnt" : [10, 10, 10, 10, 10]
+    },
+    "cycle" : {
+        "cnt" : ["1.0 miles"]
+    }
+}

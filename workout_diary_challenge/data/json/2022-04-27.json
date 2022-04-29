@@ -1,0 +1,17 @@
+{
+    "cycle" : {
+        "cnt" : ["1.5miles"]
+    },
+    "barbell squat" : {
+        "weight" : 95,
+        "cnt" : [5, 7]
+    },
+    "leg curl" : {
+        "weight" : 100,
+        "cnt" : [11, 11, 11, 11, 11]
+    },
+    "bench press" : {
+        "weight" : 95,
+        "cnt" : [10, 10, 8]        
+    }
+}

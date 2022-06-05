@@ -16,6 +16,9 @@ Select Date :
 <script>
   const parser = new DOMParser();
   const date_input = document.querySelector('input');
+
+  date_input.max = new Date().toLocaleDateString('en-ca');
+
   date_input.addEventListener('input', e => {
     let url = '{{ site.baseurl }}/workout_diary_challenge/data/html_tables/' + e.target.value + '.html';
     fetch(url)

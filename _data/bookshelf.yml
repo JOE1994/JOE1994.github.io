@@ -15,3 +15,9 @@
   progress: 87
   tot_pages: 358
   finished_date: ''
+  
+- name: "ARM® Cortex™-A Series Programmer's Guide 4.0"
+  isbn: 'den0013'
+  progress: 38
+  tot_pages: 421
+  finished_date: ''

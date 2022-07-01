@@ -1,0 +1,21 @@
+{
+    "leg extension" : {
+        "weight" : 100,
+        "cnt" : [8, 7, 7, 7, 6]
+    },
+    "dumbell side lateral raise" : {
+        "weight" : 25,
+        "cnt" :[8, 8, 8, 8, 8]
+    },
+    "right arm dumbell curl" : {
+        "weight" : 17.5,
+        "cnt" : [10, 10, 10, 9]
+    },
+    "left arm dumbell curl" : {
+        "weight" : 17.5,
+        "cnt" : [10, 10, 10, 6]
+    },
+    "bar hang" : {
+        "cnt" : ["40s"]
+    }
+}

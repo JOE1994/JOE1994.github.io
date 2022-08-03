@@ -1,0 +1,21 @@
+{
+    "right arm dumbell curl" : {
+        "weight": 25,
+        "cnt": [6, 8, 8]
+    },
+    "left arm dumbell curl" : {
+        "weight": 17.5,
+        "cnt": [12, 12, 12, 8]
+    },
+    "leg curl" : {
+        "weight": 115,
+        "cnt": [10, 8, 8, 8, 8]
+    },
+    "bench press" : {
+        "weight": 95,
+        "cnt": [8, 8, 8, 8, 8, 8]
+    },
+    "bar hang" : {
+        "cnt" : ["50s", "50s", "50s", "50s", "50s"]
+    }
+}

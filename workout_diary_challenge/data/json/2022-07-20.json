@@ -1,0 +1,9 @@
+{
+    "cycle": {
+        "cnt": ["2.0miles", "1.5miles"]
+    },
+    "bench press": {
+        "weight": 100,
+        "cnt": [10, 8, 8]
+    }
+}

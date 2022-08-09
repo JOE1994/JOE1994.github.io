@@ -1,0 +1,9 @@
+{
+    "cycle": {
+        "cnt": ["1.5miles", "1.5miles", "1.5miles", "1.5miles", "1.5miles"]
+    },
+    "leg curl": {
+        "weight": 130,
+        "cnt": [10, 10, 8, 10, 10]
+    }
+}

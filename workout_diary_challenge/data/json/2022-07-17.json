@@ -1,0 +1,21 @@
+{
+    "right arm dumbell curl": {
+        "weight": 17.5,
+        "cnt": [12, 12, 12, 12, 12]
+    },
+    "left arm dumbell curl": {
+        "weight": 17.5,
+        "cnt": [12, 12, 12, 12, 8]
+    },
+    "leg curl": {
+        "weight": 115,
+        "cnt": [10, 10, 8, 10, 10]
+    },
+    "leg extension" : {
+        "weight": 100,
+        "cnt": [10, 10, 10]
+    },
+    "cycle": {
+        "cnt": ["1.5miles"]
+    }
+}

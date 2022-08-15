@@ -21,3 +21,9 @@
   progress: 38
   tot_pages: 421
   finished_date: ''
+
+- name: "12 Rules for Life: An Antidote to Chaos"
+  isbn: 978-0345816023
+  progress: 84
+  tot_pages: 370
+  finished_date: ''

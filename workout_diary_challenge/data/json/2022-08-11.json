@@ -1,0 +1,12 @@
+{
+    "bar hang": {
+        "cnt": ["60s", "45s", "60s", "60s"]
+    },
+    "bench press": {
+        "weight": 105,
+        "cnt": [8, 8, 8, 8, 8]
+    },
+    "cycle": {
+        "cnt": ["1.6miles"]
+    }
+}

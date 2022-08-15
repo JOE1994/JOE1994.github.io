@@ -1,0 +1,21 @@
+{
+    "cycle": {
+        "cnt": ["1.5miles", "1.9miles"]
+    },
+    "bench press": {
+        "weight": 100,
+        "cnt": [8, 8, 8]
+    },
+    "right arm dumbell curl": {
+        "weight": 25,
+        "cnt": [8, 8, 10]
+    },
+    "left arm dumbell curl": {
+        "weight": 17.5,
+        "cnt": [10, 11, 10]
+    },
+    "leg curl": {
+        "weight": 100,
+        "cnt": [10, 10, 10]
+    }
+}

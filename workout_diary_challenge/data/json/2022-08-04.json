@@ -1,0 +1,8 @@
+{
+    "cycle": {
+        "cnt": ["1.5miles", "1.5miles", "1.5miles", "1.5miles", "0.8miles"]
+    },
+    "bar hang": {
+        "cnt": ["60s", "60s"]
+    }
+}

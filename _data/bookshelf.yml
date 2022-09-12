@@ -22,6 +22,12 @@
   tot_pages: 421
   finished_date: ''
 
+- name: "Computer Systems: A Programmer's Perspective, 3rd Edition"
+  isbn: 978-0134092669
+  progress: 192
+  tot_pages: 2568
+  finished_date: ''
+
 - name: "12 Rules for Life: An Antidote to Chaos"
   isbn: 978-0345816023
   progress: 84

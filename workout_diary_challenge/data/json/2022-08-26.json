@@ -1,0 +1,9 @@
+{
+    "cycle": {
+        "cnt": ["1.6miles", "1.6miles", "1.6miles"]
+    },
+    "leg extension": {
+        "weight": 100,
+        "cnt": [10, 10, 10, 10, 10]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "cycle": {
+        "cnt": ["1.6miles", "1.6miles"]
+    },
+    "right arm dumbell curl": {
+        "cnt": [9, 9, 8, 8, 8]
+    },
+    "left arm dumbell curl": {
+        "cnt": [8, 8, 8]
+    },
+    "dumbell shoulder press": {
+        "weight": 25,
+        "cnt": [12]
+    }
+}

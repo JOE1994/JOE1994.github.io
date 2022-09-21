@@ -28,6 +28,12 @@
   tot_pages: 2568
   finished_date: ''
 
+- name: "Engineering a Compiler, 2nd Edition"
+  isbn: 978-0120884780
+  progress: 60
+  tot_pages: 825
+  finished_date: ''
+
 - name: "12 Rules for Life: An Antidote to Chaos"
   isbn: 978-0345816023
   progress: 84

@@ -1,0 +1,14 @@
+{
+    "leg curl": {
+        "weight": 115,
+        "cnt": [8, 8]
+    },
+    "barbell bench press": {
+        "weight": 100,
+        "cnt": [10, 8, 8, 8, 8]
+    },
+    "dumbbell shoulder press": {
+        "weight": 25,
+        "cnt": [10, 10, 10, 8, 10]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "push-ups": {
+        "cnt": [20, 20, 20, 20, 20]
+    },
+    "dumbell shoulder press": {
+        "weight": 30,
+        "cnt": [14, 12, 14, 12, 11]
+    },
+    "leg extension": {
+        "weight": 130,
+        "cnt": [8, 10, 10, 8, 8]
+    },
+    "bench press": {
+        "weight": 100,
+        "cnt": [8, 10, 10, 10, 10]
+    }
+}

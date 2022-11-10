@@ -36,7 +36,7 @@
 
 - name: "Engineering a Compiler, 2nd Edition"
   isbn: 978-0120884780
-  progress: 60
+  progress: 99
   tot_pages: 825
   finished_date: ''
 

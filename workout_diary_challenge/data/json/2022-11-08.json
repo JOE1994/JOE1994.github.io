@@ -1,0 +1,11 @@
+{
+    "bench press": {
+        "weight": 105,
+        "cnt": [8, 8, 8, 8, 8, 8]
+    },
+    "leg press": {
+        "weight": 130,
+        "cnt": [8, 8, 8, 8, 8]
+    }
+}
+

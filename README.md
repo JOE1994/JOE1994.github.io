@@ -4,3 +4,4 @@
 ### Credits
 * [`Jekyll`](https://jekyllrb.com/)
 * [`Hyde` theme for `Jekyll`](https://hyde.getpoole.com/)
+* [`favicon.io`](https://favicon.io/favicon-generator/)

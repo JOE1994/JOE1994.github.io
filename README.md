@@ -1,4 +1,4 @@
-# Repo for Youngsuk Kim's Blog
+## Repo for `Youngsuk Kim (김영석)`'s Blog
 * Hosted on `GitHub Pages` : https://joe1994.github.io/
 
 ### Credits

@@ -73,6 +73,7 @@
   /* Sidebar links */
   .sidebar a {
     color: #fff;
+    text-decoration: none; /* Remove underline */
   }
   
   /* About section */

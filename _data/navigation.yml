@@ -1,6 +1,12 @@
+- name: 👤 About Me
+  link: /about_me.html
 - name: 📓 Posts
   link: /
+- name: 📚 My Bookshelf
+  link: /bookshelf.html
+- name: 🎓 Read the Papers!
+  link: /read_the_papers.html
+- name: 💻 Helpful CS Courses
+  link: /cs_courses.html
 - name: 💪 Workout Diary
   link: /workout_diary_challenge/workout_diary.html
-- name: 📚 My Bookshelf
-  link:  /bookshelf.html

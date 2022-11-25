@@ -26,5 +26,5 @@ exclude:
   - README.md
 
 sass:
-  sass_dir: assets/_sass
+  sass_dir: assets/css/hyde/_sass
   style: :compressed

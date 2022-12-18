@@ -4,8 +4,9 @@ import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase
 
 // Add Firebase products that you want to use
 import {
-  getAuth,
   createUserWithEmailAndPassword,
+  getAuth,
+  onAuthStateChanged,
   signInWithEmailAndPassword
 } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
 
@@ -57,7 +58,24 @@ CreateAccountForm.addEventListener('submit', e => {
 });
 */
 
-
+const SignInForm = document.getElementById('SignIn');
+SignInForm.addEventListener('submit', e => {
+  const email = SignInForm.email.value;
+  const password = SignInForm.pw.value;
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    // ...
+    console.log(user);
+    alert('Log-in successful!');
+  })
+  .catch((error) => {
+    // const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
+});
 
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);

@@ -17,6 +17,18 @@ title: WorkoutDiary
 </div>
 -->
 
+<!-- Use HTML5 form validation, but don't submit the form -->
+<div>
+<form id="SignIn" onsubmit="event.preventDefault();">
+  <h3>Sign-In</h3>
+  <label for='email'><b>Email</b></label>
+  <input type='email' placeholder="Enter email" name='email' required>
+  <label for ='pw'><b>Password</b></label>
+  <input type='password' placeholder='Enter Password' name='pw' required>
+  <button id='SignInButton'> Log-in </input>
+</form>
+</div>
+
 <div>
 Select Date :
 <input type='date'

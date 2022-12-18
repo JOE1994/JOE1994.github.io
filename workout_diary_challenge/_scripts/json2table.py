@@ -82,8 +82,8 @@ def gen_html_table(workout_dict):
     return html_str
 
 if __name__ == '__main__':
-    if not os.getcwd().endswith("workout_diary_challenge"):
-        sys.exit('This script must be run at `JOE1994.github.io/workout_diary_challenge`')
+    if not os.getcwd().endswith("workout_diary_challenge/_scripts"):
+        sys.exit('Must be run in `/workout_diary_challenge/_scripts`')
 
     for i in range(1, len(sys.argv)):
         date_str = os.path.basename(sys.argv[i])[:-5]
@@ -91,12 +91,12 @@ if __name__ == '__main__':
         workout_dict = read_json_into_dict(sys.argv[i])
 
         html_table_str = gen_html_table(workout_dict)
-        with open('data/html_tables/' + date_str + '.html', 'w') as table_f:
+        with open('../data/html_tables/' + date_str + '.html', 'w') as table_f:
             table_f.write(html_table_str)
         
         print(f'[info] Generated html table from `{date_str}.json`')
 
-    ls = subprocess.Popen(['ls', 'data/json'], stdout=subprocess.PIPE)
+    ls = subprocess.Popen(['ls', '../data/json'], stdout=subprocess.PIPE)
     how_many_days_so_far = subprocess.check_output(['wc', '-l'], stdin=ls.stdout).decode('utf-8')[:-1]
-    subprocess.run(['git', 'add', 'data'])
+    subprocess.run(['git', 'add', '../data'])
     subprocess.run(['git', 'commit', '-m', '[workout] Day' + how_many_days_so_far])

@@ -1,7 +1,14 @@
-## Repo for `Youngsuk Kim (김영석)`'s Blog
+# Repo for `Youngsuk Kim (김영석)`'s Blog
 * Hosted on `GitHub Pages` : https://joe1994.github.io/
 
-### Credits
+## Workout Diary
+* Workout reports stored as JSON files
+  * Converted to HTML tables to be viewed from web blog
+* TODO
+  * Store workout report data in `Firestore Database`
+  * Show dashboard with data visualization using D3.js (or just HTML Canvas)
+
+## Credits
 * [`Jekyll`](https://jekyllrb.com/) : static site generator (written in Ruby)
 * [`Hyde` theme for `Jekyll`](https://hyde.getpoole.com/)
 * [`favicon.io`](https://favicon.io/favicon-generator/) : web app I used to generate favicon

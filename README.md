@@ -4,6 +4,7 @@
 ## Workout Diary
 * Workout reports stored as JSON files
   * Converted to HTML tables to be viewed from web blog
+* Log in to admin account to push daily exercise data directly to Firestore DB
 * TODO
   * Store workout report data in `Firestore Database`
   * Show dashboard with data visualization using D3.js (or just HTML Canvas)

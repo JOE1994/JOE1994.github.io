@@ -3,12 +3,27 @@ layout: default
 title: WorkoutDiary
 ---
 
-<inline>
+<!--
+  Code I used for adding new user account to my Firebase project.
+  Use HTML5 form validation, but don't submit the form
+<div>
+<form id="CreateAdminAccount" onsubmit="event.preventDefault();">
+  <label for='email'><b>Email</b></label>
+  <input type='email' placeholder="Enter email" name='email' required>
+  <label for ='pw'><b>Password</b></label>
+  <input type='password' placeholder='Enter Password' name='pw' required>
+  <button id='CreateAdmin'> Create Admin Account </input>
+</form>
+</div>
+-->
+
+<div>
 Select Date :
 <input type='date'
        min='2021-12-26'
+       id = 'SelectDate'
        required>
-</inline>
+</div>
 
 <br>
 <br>
@@ -16,7 +31,7 @@ Select Date :
 
 <script>
   const parser = new DOMParser();
-  const date_input = document.querySelector('input');
+  const date_input = document.querySelector('#SelectDate');
 
   date_input.max = new Date().toLocaleDateString('en-ca');
 

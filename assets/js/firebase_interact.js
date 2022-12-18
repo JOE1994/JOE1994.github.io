@@ -3,7 +3,12 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js'
 
 // Add Firebase products that you want to use
-// import { getAuth } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword
+} from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
+
 import { getFirestore, doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js'
 
 // Your web app's Firebase configuration
@@ -21,14 +26,47 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+// Initialize Firebase Authentication and get a reference to the service
+const auth = getAuth(app);
+
+/*
+// Code I used for adding new user account to my Firebase project.
+// It'll be the only account that has write access to Firestore DB.
+const CreateAccountForm = document.getElementById('CreateAdminAccount');
+CreateAccountForm.addEventListener('submit', e => {
+  const email = CreateAccountForm.email.value;
+  const password = CreateAccountForm.pw.value;
+  console.log(email);
+  console.log(password);
+
+  // Create new user.
+  createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    console.log(user);
+    // ...
+    alert('Account Created!');
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // Dump error info
+    alert(errorMessage);
+  });
+});
+*/
+
+
 
 // Initialize Cloud Firestore and get a reference to the service
 const db = getFirestore(app);
 
 // Add a new document in collection "cities"
-
+/*
 await setDoc(doc(db, "cities", "LA"), {
   name: "Los Angeles",
   state: "CA",
   country: "USA"
 });
+*/

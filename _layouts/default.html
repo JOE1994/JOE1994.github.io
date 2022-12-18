@@ -32,5 +32,10 @@
        ga('send', 'pageview');
      </script>
     {% endif %}
+
+    {% if page.title == "WorkoutDiary" %}
+    <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+    <script type="module" src="/assets/js/firebase_interact.js"></script>
+    {% endif %}
   </body>
 </html>

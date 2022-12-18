@@ -1,0 +1,10 @@
+{
+    "leg curl": {
+        "weight": 130,
+        "cnt": [8, 8, 8, 8, 8]
+    },
+    "bench press": {
+        "weight": 105,
+        "cnt": [8, 8, 8, 8, 8]
+    }
+}

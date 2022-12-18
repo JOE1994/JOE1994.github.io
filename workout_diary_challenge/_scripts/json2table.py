@@ -81,17 +81,26 @@ def gen_html_table(workout_dict):
     html_str += '</tbody></table>'
     return html_str
 
+# Location of JSON format workout reports
+JSON_DIR = '../data/json/'
+# Location of HTML table format workout reports
+HTML_TABLE_DIR = '../data/html_tables/'
+
 if __name__ == '__main__':
     if not os.getcwd().endswith("workout_diary_challenge/_scripts"):
         sys.exit('Must be run in `/workout_diary_challenge/_scripts`')
 
-    for i in range(1, len(sys.argv)):
-        date_str = os.path.basename(sys.argv[i])[:-5]
+    print('Operating assuming the following:')
+    print(f'-- JSON_DIR       = {JSON_DIR}')
+    print(f'-- HTML_TABLE_DIR = {HTML_TABLE_DIR}\n')
+
+    for i in range(1, len(sys.argv)): # Can process multiple JSON files
+        date_str = sys.argv[i]
         assert(is_valid_date_str(date_str))
-        workout_dict = read_json_into_dict(sys.argv[i])
+        workout_dict = read_json_into_dict(JSON_DIR + date_str + ".json")
 
         html_table_str = gen_html_table(workout_dict)
-        with open('../data/html_tables/' + date_str + '.html', 'w') as table_f:
+        with open(HTML_TABLE_DIR + date_str + '.html', 'w') as table_f:
             table_f.write(html_table_str)
         
         print(f'[info] Generated html table from `{date_str}.json`')

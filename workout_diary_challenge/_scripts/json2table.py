@@ -88,9 +88,12 @@ JSON_DIR = '../data/json/'
 HTML_TABLE_DIR = '../data/html_tables/'
 
 if __name__ == '__main__':
-    if not os.getcwd().endswith("workout_diary_challenge/_scripts"):
+    cur_dir = os.getcwd()
+    if not cur_dir.endswith("workout_diary_challenge/_scripts"):
         sys.exit('Must be run in `/workout_diary_challenge/_scripts`')
 
+    print(f'Running `json2table` at:')
+    print(f'-- {cur_dir}')
     print('Operating assuming the following:')
     print(f'-- JSON_DIR       = {JSON_DIR}')
     print(f'-- HTML_TABLE_DIR = {HTML_TABLE_DIR}\n')

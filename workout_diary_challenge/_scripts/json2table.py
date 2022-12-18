@@ -81,6 +81,7 @@ def gen_html_table(workout_dict):
     html_str += '</tbody></table>'
     return html_str
 
+DATA_DIR = '../data'
 # Location of JSON format workout reports
 JSON_DIR = '../data/json/'
 # Location of HTML table format workout reports
@@ -105,7 +106,7 @@ if __name__ == '__main__':
         
         print(f'[info] Generated html table from `{date_str}.json`')
 
-    ls = subprocess.Popen(['ls', '../data/json'], stdout=subprocess.PIPE)
+    ls = subprocess.Popen(['ls', JSON_DIR], stdout=subprocess.PIPE)
     how_many_days_so_far = subprocess.check_output(['wc', '-l'], stdin=ls.stdout).decode('utf-8')[:-1]
-    subprocess.run(['git', 'add', '../data'])
+    subprocess.run(['git', 'add', DATA_DIR])
     subprocess.run(['git', 'commit', '-m', '[workout] Day' + how_many_days_so_far])

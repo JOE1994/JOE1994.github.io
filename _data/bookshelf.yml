@@ -4,6 +4,12 @@
   tot_pages: 478
   finished_date: ''
 
+- name: 'The Linux Programming Interface: A Linux and UNIX System Programming Handbook'
+  isbn: 978-1593272203
+  progress: 52
+  tot_pages: 1556
+  finished_date: ''
+
 - name: 'HTTP: The Definitive Guide'
   isbn: 978-1565925090
   progress: 102

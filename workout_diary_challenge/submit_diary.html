@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SubmitWorkoutDiary
+title: SubmitDiary
 ---
 
 <!--
@@ -18,13 +18,29 @@ title: SubmitWorkoutDiary
 -->
 
 <!-- Use HTML5 form validation, but don't submit the form -->
+<div class="login">
+  <form id="SignIn" class="form" onsubmit="event.preventDefault();">
+    <h4>Admin Log-In</h4>
+    <input type='email' placeholder="Email" name='email' required>
+    <input type='password' placeholder='Password' name='pw' required>
+    <button id='SignInButton'> Log-In </input>
+  </form>
+</div>
+
 <div>
-  <form id="SignIn" onsubmit="event.preventDefault();">
-    <h3>Sign-In</h3>
-    <label for='email'><b>Email</b></label>
-    <input type='email' placeholder="Enter email" name='email' required>
-    <label for ='pw'><b>Password</b></label>
-    <input type='password' placeholder='Enter Password' name='pw' required>
-    <button id='SignInButton'> Log-in </input>
+  <form id="DataInput" onsubmit="event.preventDefault();">
+    <h3>Workout Data Input</h3>
+    
+    <label for="select-workout">Select workout item:</label>
+    <select id="select-workout">
+      <option value="push-ups">push-ups</option>
+      <option value="bar-hang">bar-hang</option>
+      <option value="squat">squat</option>
+      <option value="smith-machine-bench-press">smith-machine-bench-press</option>
+      <option value="leg-press">leg-press</option>
+      <option value="leg-curl">leg-curl</option>
+    </select>
+
+    <button id='DataSubmit'>Submit Data</button>
   </form>
 </div>

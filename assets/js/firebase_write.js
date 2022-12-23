@@ -64,6 +64,9 @@ SignInForm.addEventListener('submit', e => {
     // ...
     console.log(user);
     alert("Sign-in successful");
+
+    const DataInputForm = document.getElementById('DataInput');
+    DataInputForm.style.visibility = 'visible';
   })
   .catch((error) => {
     // const errorCode = error.code;

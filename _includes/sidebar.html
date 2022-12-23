@@ -8,7 +8,13 @@
         </h1>
         <p class="lead">{{ site.description }}</p>
       </div>
-  
+
+      <div id="reach-me-online">
+        <a href="mailto: joseph942010@gmail.com"><i class='bx bx-envelope'></i></a>
+        <a href="https://github.com/JOE1994"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/youngsuk-kim-b1a8b215b"><i class='bx bxl-linkedin-square'></i></a>
+      </div>
+
       <nav class="sidebar-nav">
         {% for item in site.data.navigation %}
           <a class="sidebar-nav-item{% if page.url == item.link %} active{% endif %}" href="{{ item.link }}">

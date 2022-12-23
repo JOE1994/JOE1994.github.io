@@ -99,7 +99,9 @@
     background-color: maroon;
   }
   .sidebar-nav-item.active {
-    font-weight: bold;
+    /* font-weight: bold; */
+    background-color: white;
+    color: #ac4142;
   }
   
   /* Sticky sidebar

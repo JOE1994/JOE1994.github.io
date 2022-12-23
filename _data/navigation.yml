@@ -1,12 +1,12 @@
-- name: 👤 About Me
+- name: <i class='bx bxs-user'></i> About Me
   link: /about_me.html
-- name: 📓 Posts
+- name: <i class='bx bxs-edit-alt'></i> Posts
   link: /
-- name: 📚 My Bookshelf
+- name: <i class='bx bx-book-bookmark'></i> My Bookshelf
   link: /bookshelf.html
-- name: 🎓 Read the Papers!
+- name: <i class='bx bxs-graduation' ></i> Read the Papers!
   link: /read_the_papers.html
-- name: 💻 Helpful CS Courses
+- name: <i class='bx bx-laptop' ></i> Helpful CS Courses
   link: /cs_courses.html
-- name: 💪 Workout Diary
+- name: <i class='bx bx-dumbbell'></i> Workout Diary
   link: /workout_diary_challenge/workout_diary.html

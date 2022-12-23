@@ -91,7 +91,7 @@
   .sidebar-nav-item {
     display: block;
     line-height: 2;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     transition: background 0.3s ease-in-out;
   }
   a.sidebar-nav-item:hover,
@@ -125,7 +125,7 @@
    */
   
   .content {
-    padding-top:    4rem;
+    padding-top:    1rem;
     padding-bottom: 4rem;
   }
   
@@ -167,12 +167,10 @@
    Below are new CSS rules added by JOE1994
    (Unrelated to the Hyde theme)
    */
-  .bx {
-    font-size: 2.2em;
-  }
-  .bx:hover {
+  #reach-me-online>a:hover {
     background-color: maroon;
   }
   #reach-me-online {
     text-align: center;
+    font-size: 2.2em;
   }

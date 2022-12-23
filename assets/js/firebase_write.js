@@ -1,3 +1,8 @@
+// Code for submitting to Firestore DB
+//
+// Data is stored to DB only if logged-in with admin account.
+// (My Firestore DB has a security rule to only accept writes from my admin account)
+
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js'
 // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
 import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js'
@@ -49,34 +54,21 @@ CreateAccountForm.addEventListener('submit', e => {
 */
 
 const SignInForm = document.getElementById('SignIn');
-if (SignInForm !== null) {
-  SignInForm.addEventListener('submit', e => {
-    const email = SignInForm.email.value;
-    const password = SignInForm.pw.value;
-    signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      // ...
-      console.log(user);
-      alert('Log-in successful!');
-    })
-    .catch((error) => {
-      // const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorMessage);
-    });
+SignInForm.addEventListener('submit', e => {
+  const email = SignInForm.email.value;
+  const password = SignInForm.pw.value;
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    // ...
+    console.log(user);
+    alert("Sign-in successful");
+  })
+  .catch((error) => {
+    // const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
   });
-}
-
-// Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
-
-// Add a new document in collection "cities"
-/*
-await setDoc(doc(db, "cities", "LA"), {
-  name: "Los Angeles",
-  state: "CA",
-  country: "USA"
 });
-*/
+

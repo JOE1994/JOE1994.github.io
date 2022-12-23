@@ -35,7 +35,9 @@
 
     {% if page.title == "WorkoutDiary" %}
     <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
-    <script type="module" src="/assets/js/firebase_interact.js"></script>
+    <script type="module" src="/assets/js/firebase_read.js"></script>
+    {% elsif page.title == "SubmitWorkoutDiary" %}
+    <script type="module" src="/assets/js/firebase_write.js"></script>
     {% endif %}
   </body>
 </html>

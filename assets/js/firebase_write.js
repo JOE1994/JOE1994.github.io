@@ -63,7 +63,8 @@ SignInForm.addEventListener('submit', e => {
     const user = userCredential.user;
     // ...
     console.log(user);
-    alert("Sign-in successful");
+    alert("LOGIN successful");
+    document.querySelector('.login').innerHTML = '<h4>ADMIN LOGIN SUCCESSFUL</h4>';
 
     const DataInputForm = document.getElementById('DataInput');
     DataInputForm.style.visibility = 'visible';

@@ -1,0 +1,9 @@
+- name: bar-hang
+- name: leg-curl
+  weight: TRUE
+- name: leg-press
+  weight: TRUE
+- name: push-ups
+- name: smith-machine-bench-press
+  weight: TRUE
+- name: squat

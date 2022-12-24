@@ -32,12 +32,9 @@ title: SubmitDiary
     
     <label for="select-workout">Select workout item:</label>
     <select id="select-workout">
-      <option value="push-ups">push-ups</option>
-      <option value="bar-hang">bar-hang</option>
-      <option value="squat">squat</option>
-      <option value="smith-machine-bench-press">smith-machine-bench-press</option>
-      <option value="leg-press">leg-press</option>
-      <option value="leg-curl">leg-curl</option>
+      {% for item in site.data.workout-items %}
+        <option value="{{item}}">{{item}}</option>
+      {% endfor %}
     </select>
 
     <button id='DataSubmit'>Submit Data</button>

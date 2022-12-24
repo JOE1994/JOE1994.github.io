@@ -53,10 +53,11 @@ CreateAccountForm.addEventListener('submit', e => {
 });
 */
 
-const SignInForm = document.getElementById('SignIn');
-SignInForm.addEventListener('submit', e => {
-  const email = SignInForm.email.value;
-  const password = SignInForm.pw.value;
+document
+.getElementById('SignIn')
+.addEventListener('submit', e => {
+  const email = e.target.email.value;
+  const password = e.target.pw.value;
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in
@@ -76,3 +77,24 @@ SignInForm.addEventListener('submit', e => {
   });
 });
 
+const addDeleteEvent = elem => {
+  elem.addEventListener("click", e => {
+    if (document.getElementById('workout-items').childElementCount > 1) {
+      e.target.parentElement.remove();
+    } else {
+      alert("You need to submit at least one workout item!");
+    }
+  });
+}
+
+const AddWorkoutItemButton = document.getElementById('AddWorkoutItem');
+AddWorkoutItemButton.addEventListener('click', e => {
+  const clone = document.querySelector('.workout-item').cloneNode(true);
+  document.getElementById('workout-items').appendChild(clone);
+  clone.querySelector('.DataString').value = ''; // Empty input field.
+  addDeleteEvent(clone.lastElementChild);
+});
+
+document
+.querySelectorAll("button.DeleteWorkoutItem")
+.forEach(addDeleteEvent);

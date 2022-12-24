@@ -30,13 +30,25 @@ title: SubmitDiary
   <form id="DataInput" onsubmit="event.preventDefault();">
     <h3>Workout Data Input</h3>
     
-    <label for="select-workout">Select workout item:</label>
-    <select id="select-workout">
-      {% for item in site.data.workout-items %}
-        <option value="{{item}}">{{item}}</option>
-      {% endfor %}
-    </select>
+    <p><button id='AddWorkoutItem' type="button">Add Workout Item</button></p>
+    <div id="workout-items">
+      <div class="workout-item">
+        <select required>
+          <option value="NULL" selected disabled>--Select Workout Item--</option>
+          {% for item in site.data.workout-items %}
+            <option value="{{item.name}}">{{item.name}}</option>
+          {% endfor %}
+        </select>
+        <input
+          type="text"
+          class="DataString"
+          pattern="(\d, )?(\d )+"
+          title="Allowed format:  (\d, )?(\d )+"
+          required> <!-- WEIGHT, CNT CNT CNT CNT ... -->
+        <button class="DeleteWorkoutItem" type="button">Delete Workout Item</button>
+      </div>
+    </div>
 
-    <button id='DataSubmit'>Submit Data</button>
+    <p><button id='DataSubmit'>Submit Workout Data</button></p>
   </form>
 </div>

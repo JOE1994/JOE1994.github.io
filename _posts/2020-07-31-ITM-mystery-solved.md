@@ -1,6 +1,6 @@
 ---
 layout: post
-author: lonelyjoe
+title: "ITM Mystery Solved"
 ---
 
 In the source code below, the first `iprintln!` gets caught in a spinlock forever, while the second `iprintln!` transmits an ITM packet as expected.

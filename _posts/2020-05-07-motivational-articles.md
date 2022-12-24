@@ -1,6 +1,6 @@
 ---
 layout: post
-author: lonelyjoe
+title: "Motivational Articles"
 ---
 
 * [Break Out of the Undergraduate Mentality](https://cacm.acm.org/blogs/blog-cacm/157012-ph-d-s-from-the-facultys-perspective/fulltext)

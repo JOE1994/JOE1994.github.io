@@ -1,6 +1,6 @@
 ---
 layout: post
-author: lonelyjoe
+title: "LLVM Baby Steps"
 ---
 
 My first commit merged to LLVM master :)

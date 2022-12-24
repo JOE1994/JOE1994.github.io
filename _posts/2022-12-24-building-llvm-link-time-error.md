@@ -17,7 +17,7 @@ $ cmake -S llvm -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
 $ cmake --build build
 ```
 
-* ERROR MESSAGE (SIGKILL)
+ERROR MESSAGE (SIGKILL):
 ```
 [62/191] Linking CXX executable bin/llvm-debuginfo-analyzer
 FAILED: bin/llvm-debuginfo-analyzer 
@@ -28,9 +28,10 @@ compilation terminated.
 ninja: build stopped: subcommand failed.
 ```
 
-### `Gold` Linker
+My suspected cause is [`Out of Memory`](https://en.wikipedia.org/wiki/Out_of_memory).
 
-My suspected cause was [`Out of Memory`](https://en.wikipedia.org/wiki/Out_of_memory). I had previously heard some people bash `ld` for consuming too much RAM when handling debug info. So I tried using [`gold`](https://manpages.ubuntu.com/manpages/trusty/man1/x86_64-linux-gnu-ld.gold.1.html) instead.
+### `Gold` Linker
+I had previously heard some people bash `ld` for consuming too much RAM when handling debug info. So I tried using [`gold`](https://manpages.ubuntu.com/manpages/trusty/man1/x86_64-linux-gnu-ld.gold.1.html) instead.
 
 ```bash
 # Configure to build in Debug mode, using `gold`

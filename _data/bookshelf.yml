@@ -18,7 +18,7 @@
 
 - name: 'Assembly Programming and Computer Architecture for Software Engineers, 1st ed'
   isbn: 978-1943153329
-  progres: 30
+  progress: 30
   tot_pages: 297
   finished_date: ''
 

@@ -25,6 +25,11 @@
  */
 
 
+@font-face {
+  font-family: UbuntuFont;
+  src: url(../../fonts/UbuntuFonts/Ubuntu-Light.ttf);
+}
+
 /*
  * Global resets
  *
@@ -32,7 +37,7 @@
  */
 
  html {
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-family: UbuntuFont;
   }
   @media (min-width: 48em) {
     html {
@@ -80,7 +85,7 @@
   .sidebar-about h1 {
     color: #fff;
     margin-top: 0;
-    font-family: "Abril Fatface", serif;
+    font-family: UbuntuFont;
     font-size: 2.2rem;
   }
   

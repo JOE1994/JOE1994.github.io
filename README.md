@@ -15,3 +15,4 @@
 * [`favicon.io`](https://favicon.io/favicon-generator/) : web app I used to generate favicon
 * [`Simple Emoji Animations` by *George W. Park*](https://codepen.io/GeorgePark/pen/aazBGj) : used in `404.html`
 * [`utterances`](https://github.com/utterance/utterances) : comments widget for posts
+* [`Ubuntu` Font](https://fonts.google.com/specimen/Ubuntu) : globally used for rendering non-code text

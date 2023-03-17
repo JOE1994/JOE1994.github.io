@@ -32,7 +32,7 @@
   isbn: 'den0013'
   progress: 186
   tot_pages: 421
-  finished_date: '2023-03-17'
+  finished_date: ''
 
 - name: "Intel® 64 and IA-32 Architectures Software Developer’s Manual"
   isbn: '325462-074US'
@@ -56,4 +56,4 @@
   isbn: 978-0345816023
   progress: 370
   tot_pages: 370
-  finished_date: ''
+  finished_date: '2023-03-17'

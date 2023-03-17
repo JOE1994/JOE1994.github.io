@@ -32,7 +32,7 @@
   isbn: 'den0013'
   progress: 186
   tot_pages: 421
-  finished_date: ''
+  finished_date: '2023-03-17'
 
 - name: "Intel® 64 and IA-32 Architectures Software Developer’s Manual"
   isbn: '325462-074US'
@@ -54,6 +54,6 @@
 
 - name: "12 Rules for Life: An Antidote to Chaos"
   isbn: 978-0345816023
-  progress: 284
+  progress: 370
   tot_pages: 370
   finished_date: ''

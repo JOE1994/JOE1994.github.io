@@ -2,58 +2,43 @@
   isbn: 978-1680508161
   progress: 224
   tot_pages: 478
-  finished_date: ''
 
 - name: 'The Linux Programming Interface: A Linux and UNIX System Programming Handbook'
   isbn: 978-1593272203
   progress: 107
   tot_pages: 1556
-  finished_date: ''
 
 - name: 'HTTP: The Definitive Guide'
   isbn: 978-1565925090
   progress: 102
   tot_pages: 596
-  finished_date: ''
 
 - name: 'Assembly Programming and Computer Architecture for Software Engineers, 1st ed'
   isbn: 978-1943153329
   progress: 30
   tot_pages: 297
-  finished_date: ''
 
 - name: 'Black Hat Rust'
   isbn: 'N/A'
   progress: 87
   tot_pages: 358
-  finished_date: ''
   
 - name: "ARM® Cortex™-A Series Programmer's Guide 4.0"
   isbn: 'den0013'
   progress: 186
   tot_pages: 421
-  finished_date: ''
 
 - name: "Intel® 64 and IA-32 Architectures Software Developer’s Manual"
   isbn: '325462-074US'
   progress: 72
   tot_pages: 5106
-  finished_date: ''
 
 - name: "Computer Systems: A Programmer's Perspective, 3rd Edition"
   isbn: 978-0134092669
   progress: 292
   tot_pages: 2568
-  finished_date: ''
 
 - name: "Engineering a Compiler, 2nd Edition"
   isbn: 978-0120884780
   progress: 99
   tot_pages: 825
-  finished_date: ''
-
-- name: "12 Rules for Life: An Antidote to Chaos"
-  isbn: 978-0345816023
-  progress: 370
-  tot_pages: 370
-  finished_date: '2023-03-17'

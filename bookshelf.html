@@ -12,11 +12,15 @@ layout: default
 </div>
 
 <table id = "still-reading" class = "bookshelf-table">
-    <tr>
-        <th>Book Title</th>
-        <th>ISBN</th>
-        <th>My Progress</th>
-    </tr>
+    <thead>
+        <tr>
+            <th>Book Title</th>
+            <th>ISBN</th>
+            <th>My Progress</th>
+        </tr>
+    </thead>
+
+    <tbody>
 {% for book in site.data.bookshelf_still_reading %}
     <tr>
         <td>{{ book.name }}</td>
@@ -24,15 +28,20 @@ layout: default
         <td><progress value="{{ book.progress }}" max="{{ book.tot_pages }}"></progress></td>
     </tr>
 {% endfor %}
+    </tbody>
 </table>
 
 <table id = "finished-reading" class = "bookshelf-table">
-    <tr>
-        <th>Book Title</th>
-        <th>ISBN</th>
-        <th>Finished Date</th>
-        <th>My Rating</th>
-    </tr>
+    <thead>
+        <tr>
+            <th>Book Title</th>
+            <th>ISBN</th>
+            <th>Finished Date</th>
+            <th>My Rating</th>
+        </tr>
+    </thead>
+
+    <tbody>
 {% for book in site.data.bookshelf_done %}
     <tr>
         <td>{{ book.name }}</td>
@@ -41,6 +50,7 @@ layout: default
         <td>{{ book.rating }}</td>
     </tr>
 {% endfor %}
+    </tbody>
 </table>
 
 <style>
@@ -61,7 +71,10 @@ layout: default
         font-size: 1em;
         border-radius: 0.25em;
     }
-    .bookshelf-table tr:first-child {
+    .bookshelf-table {
+        margin-top: 0.2em;
+    }
+    .bookshelf-table > thead {
         color: white;
         background: #ac4142;
     }

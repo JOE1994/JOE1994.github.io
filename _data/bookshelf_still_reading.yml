@@ -35,8 +35,8 @@
 
 - name: "Computer Systems: A Programmer's Perspective, 3rd Edition"
   isbn: 978-0134092669
-  progress: 292
-  tot_pages: 2568
+  progress: 200
+  tot_pages: 1122
 
 - name: "Engineering a Compiler, 2nd Edition"
   isbn: 978-0120884780

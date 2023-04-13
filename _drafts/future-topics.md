@@ -16,3 +16,5 @@
 * Compiler was doing `**('std::end' of heap allocated object)`.
   Random failure occurred only when the `*(std::end of heap allocated object)` was nullptr.
 * Dereferencing invalid heap memory was the source of non-deterministic behavior.
+
+## What additional changes are needed in LLVM fork used by Rustc, compared to upstream LLVM ?

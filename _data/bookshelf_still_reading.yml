@@ -3,6 +3,11 @@
   progress: 224
   tot_pages: 478
 
+- name: 'Rust in Action'
+  isbn: ''
+  progress: 69
+  tot_pages: 457
+
 - name: 'The Linux Programming Interface: A Linux and UNIX System Programming Handbook'
   isbn: 978-1593272203
   progress: 107

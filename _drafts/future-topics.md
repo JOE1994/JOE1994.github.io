@@ -9,3 +9,10 @@
 ## ARM SVE Learning Resources
 * https://www.youtube.com/watch?v=eGCcPo4UAHs
 * https://gitlab.com/arm-hpc/training/arm-sve-tools
+
+## Random crashes from running single-threaded compiler
+* Write experience from fixing memory bug at my job
+* Random crashes weren't caused by data races in a multi-thread context.
+* Compiler was doing `**('std::end' of heap allocated object)`.
+  Random failure occurred only when the `*(std::end of heap allocated object)` was nullptr.
+* Dereferencing invalid heap memory was the source of non-deterministic behavior.

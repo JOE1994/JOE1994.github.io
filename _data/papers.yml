@@ -2,3 +2,6 @@
   link: https://inria.hal.science/inria-00070266/
   etc : "ACM ver. (ACM Transactions on Mathematical Software) behind paywall https://dl.acm.org/doi/10.1145/1236463.1236468"
   note: MPFR extends IEE-754 standard merits to provide correct rounding in arbitrary precision
+  first_read_date: 2023-04-20
+  did_i_understand: 3/5
+  

@@ -1,0 +1,4 @@
+- name: "MPFR: A Multiple-Precision Binary Floating-Point Library With Correct Rounding"
+  link: https://inria.hal.science/inria-00070266/
+  etc : "ACM ver. (ACM Transactions on Mathematical Software) behind paywall https://dl.acm.org/doi/10.1145/1236463.1236468"
+  note: MPFR extends IEE-754 standard merits to provide correct rounding in arbitrary precision

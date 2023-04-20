@@ -1,49 +1,41 @@
 - name: 'Hands-on Rust: Effective Learning through 2D Game Development and Play'
-  isbn: 978-1680508161
   progress: 224
   tot_pages: 478
 
-- name: 'Rust in Action'
-  isbn: ''
+- name: 'Rust in Action: Systems programming concepts and techniques'
   progress: 135
   tot_pages: 457
 
 - name: 'The Linux Programming Interface: A Linux and UNIX System Programming Handbook'
-  isbn: 978-1593272203
   progress: 107
   tot_pages: 1556
 
 - name: 'HTTP: The Definitive Guide'
-  isbn: 978-1565925090
   progress: 102
   tot_pages: 596
 
 - name: 'Assembly Programming and Computer Architecture for Software Engineers, 1st ed'
-  isbn: 978-1943153329
   progress: 30
   tot_pages: 297
 
 - name: 'Black Hat Rust'
-  isbn: 'N/A'
   progress: 87
   tot_pages: 358
   
 - name: "ARM® Cortex™-A Series Programmer's Guide 4.0"
-  isbn: 'den0013'
+  version: 'den0013'
   progress: 186
   tot_pages: 421
 
 - name: "Intel® 64 and IA-32 Architectures Software Developer’s Manual"
-  isbn: '325462-074US'
+  version: '325462-074US'
   progress: 72
   tot_pages: 5106
 
 - name: "Computer Systems: A Programmer's Perspective, 3rd Edition"
-  isbn: 978-0134092669
   progress: 221
   tot_pages: 1122
 
 - name: "Engineering a Compiler, 2nd Edition"
-  isbn: 978-0120884780
   progress: 99
   tot_pages: 825

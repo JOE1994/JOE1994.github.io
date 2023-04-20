@@ -15,7 +15,6 @@ layout: default
     <thead>
         <tr>
             <th>Book Title</th>
-            <th>ISBN</th>
             <th>My Progress</th>
         </tr>
     </thead>
@@ -24,7 +23,6 @@ layout: default
 {% for book in site.data.bookshelf_still_reading %}
     <tr>
         <td>{{ book.name }}</td>
-        <td>{{ book.isbn }}</td>
         <td><progress value="{{ book.progress }}" max="{{ book.tot_pages }}"></progress></td>
     </tr>
 {% endfor %}
@@ -35,7 +33,6 @@ layout: default
     <thead>
         <tr>
             <th>Book Title</th>
-            <th>ISBN</th>
             <th>Finished Date</th>
             <th>My Rating</th>
         </tr>
@@ -45,7 +42,6 @@ layout: default
 {% for book in site.data.bookshelf_done %}
     <tr>
         <td>{{ book.name }}</td>
-        <td>{{ book.isbn }}</td>
         <td>{{ book.finished_date }}</td>
         <td>{{ book.rating }}</td>
     </tr>

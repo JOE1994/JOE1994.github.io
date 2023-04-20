@@ -1,3 +1,6 @@
+## `long double` on aarch64 vs x86_64
+* sizeof(long double) == 128, but only aarch64 supports `IEEE-754 quadruple precision format`
+
 ## PIC (Position-Independent-Code) , PIE
 
 ## Why use `dlopen`

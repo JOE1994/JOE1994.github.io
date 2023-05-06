@@ -19,7 +19,7 @@ title: SubmitDiary
 
 <!-- Use HTML5 form validation, but don't submit the form -->
 <div class="login">
-  <form id="SignIn" class="form" onsubmit="event.preventDefault();">
+  <form id="SignIn" class="form">
     <input type='email' placeholder="Email" name='email' required>
     <input type='password' placeholder='Password' name='pw' required>
     <button id='SignInButton'> ADMIN LOGIN </input>
@@ -27,28 +27,56 @@ title: SubmitDiary
 </div>
 
 <div>
-  <form id="DataInput" onsubmit="event.preventDefault();">
-    <h3>Workout Data Input</h3>
-    
-    <p><button id='AddWorkoutItem' type="button">Add Workout Item</button></p>
-    <div id="workout-items">
-      <div class="workout-item">
-        <select required>
-          <option value="NULL" selected disabled>--Select Workout Item--</option>
-          {% for item in site.data.workout-items %}
-            <option value="{{item.name}}">{{item.name}}</option>
-          {% endfor %}
-        </select>
-        <input
-          type="text"
-          class="DataString"
-          pattern="(\d, )?(\d )+"
-          title="Allowed format:  (\d, )?(\d )+"
-          required> <!-- WEIGHT, CNT CNT CNT CNT ... -->
-        <button class="DeleteWorkoutItem" type="button">Delete Workout Item</button>
-      </div>
-    </div>
-
-    <p><button id='DataSubmit'>Submit Workout Data</button></p>
+  <form id="DataInput"">
+    <table id = "workout-table">
+      <caption>
+        <h3>Workout Data Input</h3>
+      </caption>
+      <thead>
+        <tr>
+          <th>Workout Item</th>
+          <th>Weight (lbs)</th>
+          <th>Count</th>
+          <th>
+            <button id='AddWorkoutItem' type="button">Add row</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="workout-item">
+          <td>
+            <input type="text"
+                   list="workout-items"
+                   pattern="[a-z-A-Z][a-zA-Z -]*[a-zA-z]"
+                   class="workout-name"
+                   required>
+            <datalist id="workout-items">
+              <option value="NULL" selected disabled>--Select Workout Item--</option>
+              {% for item in site.data.workout-items %}
+                <option value="{{item}}">{{item}}</option>
+              {% endfor %}
+            </datalist>
+          </td>
+          <td>
+            <input type="number" class="workout-weight">
+          </td>
+          <td>
+            <input
+              type="text"
+              class="reps"
+              pattern="[0-9][ 0-9]+"
+              required>
+          </td>
+          <td>
+            <button class="DeleteWorkoutItem" type="button">Delete row</button>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot align = "center">
+        <td colspan="4">
+          <button id='DataSubmit'>Submit Workout Data</button>
+        </td>
+      </tfoot>
+    </table>
   </form>
 </div>

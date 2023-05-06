@@ -1,5 +1,5 @@
 #DataInput {
-  visibility : hidden;
+  /* visibility : hidden; */
 }
 
 .login {
@@ -50,4 +50,8 @@
 #SignInButton:active {
   color: #ac4142;
   background: WHITE;
+}
+
+input:invalid {
+  border: red solid 0.2em;
 }

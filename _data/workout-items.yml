@@ -1,9 +1,13 @@
-- name: bar-hang
-- name: leg-curl
-  weight: TRUE
-- name: leg-press
-  weight: TRUE
-- name: push-ups
-- name: smith-machine-bench-press
-  weight: TRUE
-- name: squat
+- bar-hang
+- leg-curl
+- leg-press
+- push-ups
+- smith-machine-bench-press
+- squat
+- pectoral-fly
+- shoulder-press
+- leg-extension
+- lat-pulldown
+- seated-dip
+- seated-triceps-press
+- arm-curl

@@ -24,7 +24,8 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
-
+// Initialize Cloud Firestore and get a reference to the service
+const db = getFirestore(app);
 /*
 // Code I used for adding new user account to my Firebase project.
 // It'll be the only account that has write access to Firestore DB.
@@ -56,6 +57,7 @@ CreateAccountForm.addEventListener('submit', e => {
 document
 .getElementById('SignIn')
 .addEventListener('submit', e => {
+  e.preventDefault();
   const email = e.target.email.value;
   const password = e.target.pw.value;
   signInWithEmailAndPassword(auth, email, password)
@@ -79,8 +81,8 @@ document
 
 const addDeleteEvent = elem => {
   elem.addEventListener("click", e => {
-    if (document.getElementById('workout-items').childElementCount > 1) {
-      e.target.parentElement.remove();
+    if (document.querySelector('#workout-table > tbody').childElementCount > 1) {
+      e.target.parentElement.parentElement.remove();
     } else {
       alert("You need to submit at least one workout item!");
     }
@@ -90,11 +92,35 @@ const addDeleteEvent = elem => {
 const AddWorkoutItemButton = document.getElementById('AddWorkoutItem');
 AddWorkoutItemButton.addEventListener('click', e => {
   const clone = document.querySelector('.workout-item').cloneNode(true);
-  document.getElementById('workout-items').appendChild(clone);
-  clone.querySelector('.DataString').value = ''; // Empty input field.
+  document.querySelector('#workout-table > tbody').appendChild(clone);
+  clone.querySelectorAll('input').forEach((input) => {input.value = '';});
   addDeleteEvent(clone.lastElementChild);
 });
+
 
 document
 .querySelectorAll("button.DeleteWorkoutItem")
 .forEach(addDeleteEvent);
+
+document
+.getElementById('DataInput')
+.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  let workout_data = {};
+  document
+  .querySelectorAll('.workout-item')
+  .forEach(row => {
+    const row_inputs = row.querySelectorAll('input');
+    workout_data[row_inputs.item(0).value] = {
+      ...(row_inputs.item(1).value !== '') && { weight: parseInt(row_inputs.item(1).value)},
+      reps: row_inputs.item(2).value.split(' ').map(x => parseInt(x)),
+    };
+  });
+
+  // Submit workout data to firebase DB.
+  await setDoc(
+    doc(db, "workout-data", new Date().toLocaleDateString('en-ca')),
+    workout_data
+  ).then(() => { alert("Data submitted to database"); });
+});

@@ -12,7 +12,8 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
-  signInWithEmailAndPassword
+  signInWithEmailAndPassword,
+  signOut
 } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js'
 
 import { getFirestore, doc, setDoc } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js'
@@ -122,5 +123,11 @@ document
   await setDoc(
     doc(db, "workout-data", new Date().toLocaleDateString('en-ca')),
     workout_data
-  ).then(() => { alert("Data submitted to database"); });
+  ).then(() => {
+    alert("Data submitted to database");
+  }).catch (error => {
+    alert("You need to log-in to submit data");
+  });
+
+  signOut(auth).then(() => alert("Signing out for security.."));
 });

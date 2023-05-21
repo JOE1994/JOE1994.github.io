@@ -120,11 +120,15 @@ document
   });
 
   // Submit workout data to firebase DB.
+  const dateStr = new Date().toLocaleDateString('en-ca');
   await setDoc(
-    doc(db, "workout-data", new Date().toLocaleDateString('en-ca')),
+    doc(db, "workout-data", dateStr),
     workout_data
   ).then(() => {
     alert("Data submitted to database");
+
+    // Clear the data input form upon submit.
+    e.target.reset();
   }).catch (error => {
     alert("You need to log-in to submit data");
   });

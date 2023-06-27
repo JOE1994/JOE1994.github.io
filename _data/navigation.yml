@@ -1,5 +1,5 @@
 - name: <i class='bx bxs-user'></i> About Me
-  link: /index.md
+  link: /
 - name: <i class='bx bxs-edit-alt'></i> Posts
   link: /posts.html
 - name: <i class='bx bx-book-bookmark'></i> My Bookshelf

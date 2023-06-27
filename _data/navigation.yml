@@ -1,7 +1,7 @@
 - name: <i class='bx bxs-user'></i> About Me
-  link: /about_me.html
+  link: /index.md
 - name: <i class='bx bxs-edit-alt'></i> Posts
-  link: /
+  link: /posts.html
 - name: <i class='bx bx-book-bookmark'></i> My Bookshelf
   link: /bookshelf.html
 - name: <i class='bx bxs-graduation' ></i> Read the Papers

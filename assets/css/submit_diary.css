@@ -34,11 +34,10 @@
   background-color: #ac4142;
 }
 
-.form button {
-  outline: 0;
+.login > button {
+  display: flex;
+  justify-content: center;
   width: 55%;
-  margin-top: 0.4em;
-  margin-bottom: 0;
   border-radius: 0.3em;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;

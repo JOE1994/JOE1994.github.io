@@ -72,7 +72,12 @@ document
     const user = result.user;
     // IdP data available using getAdditionalUserInfo(result)
     // ...
-    alert("Google Log-in Success!");
+    // console.log(user);
+    alert("Google LOGIN successful");
+    document.querySelector('.login').innerHTML = '<h4>ADMIN LOGIN SUCCESSFUL</h4>';
+
+    const DataInputForm = document.getElementById('DataInput');
+    DataInputForm.style.visibility = 'visible';
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
@@ -83,31 +88,6 @@ document
     const credential = GoogleAuthProvider.credentialFromError(error);
     // ...
     alert (errorCode);
-  });
-});
-
-document
-.getElementById('SignIn')
-.addEventListener('submit', e => {
-  e.preventDefault();
-  const email = e.target.email.value;
-  const password = e.target.pw.value;
-  signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in
-    const user = userCredential.user;
-    // ...
-    console.log(user);
-    alert("LOGIN successful");
-    document.querySelector('.login').innerHTML = '<h4>ADMIN LOGIN SUCCESSFUL</h4>';
-
-    const DataInputForm = document.getElementById('DataInput');
-    DataInputForm.style.visibility = 'visible';
-  })
-  .catch((error) => {
-    // const errorCode = error.code;
-    const errorMessage = error.message;
-    alert(errorMessage);
   });
 });
 

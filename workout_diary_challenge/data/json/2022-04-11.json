@@ -1,8 +1,0 @@
-{
-    "bar hang" : {
-        "cnt" : ["30s", "30s", "30s", "30s"]
-    },
-    "vertical leg raise" : {
-        "cnt" : [8, 10, 8, 8]
-    }
-}

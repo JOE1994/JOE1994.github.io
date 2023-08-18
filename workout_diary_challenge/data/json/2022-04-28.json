@@ -1,9 +1,0 @@
-{
-    "cycle" : {
-        "cnt" : ["1.5miles"]
-    },
-    "barbell squat" : {
-        "weight" : 95,
-        "cnt" : [6, 8, 8, 10, 10]
-    }
-}

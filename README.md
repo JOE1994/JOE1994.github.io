@@ -6,7 +6,6 @@
   * Converted to HTML tables to be viewed from web blog
 * Log in to admin account to push daily exercise data directly to Firestore DB
 * TODO
-  * Transfer previous JSON file data to Firestore DB
   * Show dashboard with data visualization using D3.js (or just HTML Canvas)
 
 ## Credits

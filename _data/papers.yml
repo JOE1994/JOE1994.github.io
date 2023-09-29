@@ -4,4 +4,6 @@
   note: MPFR extends IEE-754 standard merits to provide correct rounding in arbitrary precision
   first_read_date: 2023-04-20
   did_i_understand: 3/5
-  
+
+- name: "Compiling machine learning programs via high-level tracing"
+  link: https://mlsys.org/Conferences/2019/doc/2018/146.pdf

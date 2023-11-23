@@ -19,12 +19,15 @@ layout: default
 
 ## Open-Source Contributions
 
+### [llvm-project](https://github.com/llvm/llvm-project/commits?author=JOE1994)
+* Opaque pointer clean-up work
+  * Remove old APIs which are no longer needed with opaque pointers
+  * Remove no-op ptr-to-ptr bitcasts
+* Reported & isolated bug: [Clang assertion failure after D139237](https://github.com/llvm/llvm-project/issues/59602)
+
 ### ["Writing an OS in Rust"](https://github.com/phil-opp/blog_os/commits?author=JOE1994) Blog (edition-2)
 * Authored official Korean translation of chapters 1 ~ 7
 * Special thanks to the reviewers! ([@Quqqu](https://github.com/QuqqU) & [@KimWang906](https://github.com/KimWang906) & [@dalinaum](https://github.com/dalinaum) & [@phil-opp](https://github.com/phil-opp))
-
-### [llvm-project](https://github.com/llvm/llvm-project/commits?author=JOE1994)
-* Reported & isolated bug: [Clang assertion failure after D139237](https://github.com/llvm/llvm-project/issues/59602)
 
 ### [MIRI](https://github.com/rust-lang/miri/commits?author=JOE1994) : Rust MIR Interpreter
 * Improved support for running MIRI on Windows

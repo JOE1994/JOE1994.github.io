@@ -55,7 +55,3 @@
 - name: "Hands-On Concurrency with Rust: Confidently build memory-safe, parallel, and efficient software in Rust"
   progress: 12
   tot_pages: 444
-
-- name: "Chip War: The Fight for the World's Most Critical Technology"
-  progress: 331
-  tot_pages: 436

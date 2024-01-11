@@ -55,3 +55,7 @@
 - name: "Hands-On Concurrency with Rust: Confidently build memory-safe, parallel, and efficient software in Rust"
   progress: 12
   tot_pages: 444
+
+- name: "Game Engine Architecture, 3rd Ed"
+  progress: 12
+  tot_pages: 1240

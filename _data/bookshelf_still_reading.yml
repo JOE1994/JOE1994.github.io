@@ -56,6 +56,10 @@
   progress: 12
   tot_pages: 444
 
+- name: "C++ Primer, 5th Ed"
+  progress: 82
+  tot_pages: 969
+
 - name: "Game Engine Architecture, 3rd Ed"
   progress: 43
   tot_pages: 1240

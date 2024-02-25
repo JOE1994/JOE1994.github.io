@@ -1,13 +1,6 @@
 # Repo for `Youngsuk Kim (김영석)`'s Blog
 * Hosted by `GitHub Pages` : https://joe1994.github.io/
 
-## Workout Diary
-* Workout reports stored as JSON files
-  * Converted to HTML tables to be viewed from web blog
-* Log in to admin account to push daily exercise data directly to Firestore DB
-* TODO
-  * Show dashboard with data visualization using D3.js (or just HTML Canvas)
-
 ## Credits
 * [`Jekyll`](https://jekyllrb.com/) : static site generator (written in Ruby)
 * [`Hyde` theme for `Jekyll`](https://hyde.getpoole.com/)

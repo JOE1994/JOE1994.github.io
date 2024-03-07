@@ -21,6 +21,7 @@ layout: default
 
 ### [llvm-project](https://github.com/llvm/llvm-project/commits?author=JOE1994)
 * [Clang: Emit warning when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
+* [Verify old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
 * [Opaque pointer](https://llvm.org/docs/OpaquePointers.html) clean-up work
   * Remove old APIs which are no longer needed with opaque pointers
   * Remove no-op ptr-to-ptr bitcasts

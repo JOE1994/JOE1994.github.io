@@ -35,11 +35,13 @@
      </script>
     {% endif %}
 
-    {% if page.title == "WorkoutDiary" %}
     <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+    <!--
+    {% if page.title == "WorkoutDiary" %}
     <script type="module" src="/assets/js/firebase_read.js"></script>
     {% elsif page.title == "SubmitDiary" %}
     <script type="module" src="/assets/js/firebase_write.js"></script>
     {% endif %}
+    -->
   </body>
 </html>

@@ -20,13 +20,16 @@ layout: default
 ## Open-Source Contributions
 
 ### [llvm-project](https://github.com/llvm/llvm-project/commits?author=JOE1994)
-* [Clang: Emit warning when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
+* `Clang`
+  * [Warn unused cxx vardecl which entirely consists condition expr of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
+  * [Emit warning when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
+  * Reported & isolated bug: [Clang assertion failure after D139237](https://github.com/llvm/llvm-project/issues/59602)
+* `LLVM`
+  * [Opaque pointer](https://llvm.org/docs/OpaquePointers.html) clean-up work
+    * Remove old APIs which are no longer needed with opaque pointers
+    * Remove no-op ptr-to-ptr bitcasts
+    * Special thanks to [@nikic](https://github.com/nikic) & [@s-barannikov](https://github.com/s-barannikov) for reviewing my initial commits!
 * [Verify old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
-* [Opaque pointer](https://llvm.org/docs/OpaquePointers.html) clean-up work
-  * Remove old APIs which are no longer needed with opaque pointers
-  * Remove no-op ptr-to-ptr bitcasts
-  * Special thanks to [@nikic](https://github.com/nikic) & [@s-barannikov](https://github.com/s-barannikov) for reviewing my initial commits!
-* Reported & isolated bug: [Clang assertion failure after D139237](https://github.com/llvm/llvm-project/issues/59602)
 
 ### ["Writing an OS in Rust"](https://github.com/phil-opp/blog_os/commits?author=JOE1994) Blog (edition-2)
 * Authored official Korean translation of chapters 1 ~ 7

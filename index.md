@@ -40,7 +40,3 @@ layout: default
   * [Implement environment variable emulation on Windows](https://github.com/rust-lang/miri/issues/707)
   * [Windows: cannot create Instants](https://github.com/rust-lang/miri/issues/1291)
 * Special thanks to [@RalfJung](https://github.com/RalfJung) & [@pvdrz](https://github.com/pvdrz) who mentored me through the process!
-
-### [Rust compiler](https://github.com/rust-lang/rust/commits?author=JOE1994)
-* Improved support for MIRI (Rust MIR Interpreter)
-* Fixed issue: [Invalid JSON for ast-json](https://github.com/rust-lang/rust/issues/71086)

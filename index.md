@@ -23,7 +23,7 @@ layout: default
 * `Clang`
   * [Warn unused cxx vardecl which entirely consists condition expr of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
   * [Emit warning when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
-  * Reported & isolated bug: [Clang assertion failure after D139237](https://github.com/llvm/llvm-project/issues/59602)
+  * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
 * `LLVM`
   * [Opaque pointer](https://llvm.org/docs/OpaquePointers.html) clean-up work
     * Remove old APIs which are no longer needed with opaque pointers

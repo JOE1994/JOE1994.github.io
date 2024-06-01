@@ -25,6 +25,7 @@ layout: default
   * [Warn when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
   * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
   * [Warn consecutive builtin comparisons in an expression](https://github.com/llvm/llvm-project/pull/92200)
+  * [Don't emit 'declared here' note for builtin functions with no decl in source](https://github.com/llvm/llvm-project/pull/93394)
 * `LLVM`
   * [Opaque pointer](https://llvm.org/docs/OpaquePointers.html) clean-up
     * Remove old APIs which are no longer needed with opaque pointers

@@ -64,10 +64,6 @@
   progress: 47
   tot_pages: 1240
 
-- name: "Kochland: The Secret History of Koch Industries and Corporate Power in America"
-  progress: 453
-  tot_pages: 688
-
 - name : "Learn LLVM 17"
   progress: 89
   tot_pages: 615

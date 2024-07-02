@@ -67,3 +67,7 @@
 - name : "Learn LLVM 17"
   progress: 89
   tot_pages: 615
+
+- name: "Learning eBPF"
+  progress: 25
+  tot_pages: 371

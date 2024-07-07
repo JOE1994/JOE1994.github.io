@@ -1,6 +1,107 @@
 ---
 layout: default
+title: Read the papers
 ---
 
-TODO. Will use this page to update paper reading progress, and leave short reviews.
-Show papers depending on different areas in CS.
+<div>
+<button class = "view-select-button" id = "show-still-reading" type="button">
+    Reading-In-Progress
+</button>
+<button class = "view-select-button" id = "show-finished-reading" type="button">
+    Finished-Reading
+</button>
+</div>
+
+<table id = "still-reading" class = "paper-table">
+    <thead>
+        <tr>
+            <th>Paper Name</th>
+            <th>Conference</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+    <tbody>
+{% for paper in site.data.papers_reading %}
+    <tr>
+        <td>{{ paper.name }}</td>
+        <td>{{ paper.conf }}</td>
+        <td>{{ paper.year }}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+
+<table id = "finished-reading" class = "paper-table">
+    <thead>
+        <tr>
+            <th>Book Title</th>
+            <th>Finished Date</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+
+    <tbody>
+{% for paper in site.data.papers_done %}
+    <tr>
+        <td>{{ paper.name }}</td>
+        <td>{{ paper.finished_date }}</td>
+        <td>{{ paper.rating }}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+
+<style>
+    #still-reading {
+        display: block;
+    }
+    #finished-reading {
+        display: none;
+    }
+    #show-still-reading {
+        background-color: #ac4142;
+    }
+    #show-finished-reading {
+        background-color: rgb(234, 194, 194);
+    }
+    .view-select-button {
+        color: white;
+        font-size: 1em;
+        border-radius: 0.25em;
+    }
+    .paper-table {
+        margin-top: 0.2em;
+    }
+    .paper-table > thead {
+        color: white;
+        background: #ac4142;
+    }
+</style>
+
+<script>
+    let still_reading = document.getElementById("still-reading");
+    let finished_reading = document.getElementById("finished-reading");
+    
+    let button0 = document.getElementById("show-still-reading");
+    let button1 = document.getElementById("show-finished-reading");
+
+    const active_bg_color = "#ac4142";
+    const inactive_bg_color = "rgb(234, 194, 194)";
+
+    button0
+    .addEventListener("click", () => {
+        still_reading.style.display = "block";
+        finished_reading.style.display = "none";
+        button0.style.backgroundColor = active_bg_color;
+        button1.style.backgroundColor = inactive_bg_color;
+    });
+
+    button1
+    .addEventListener("click", () => {
+        still_reading.style.display = "none";
+        finished_reading.style.display = "block";
+        button1.style.backgroundColor = active_bg_color;
+        button0.style.backgroundColor = inactive_bg_color;
+    });
+</script>

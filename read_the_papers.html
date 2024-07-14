@@ -35,9 +35,10 @@ title: Read the papers
 <table id = "finished-reading" class = "paper-table">
     <thead>
         <tr>
-            <th>Book Title</th>
-            <th>Finished Date</th>
-            <th>Rating</th>
+            <th>Paper Name</th>
+            <th>Conference</th>
+            <th>Pub Year</th>
+            <th>Fin Date</th>
         </tr>
     </thead>
 
@@ -45,8 +46,9 @@ title: Read the papers
 {% for paper in site.data.papers_done %}
     <tr>
         <td>{{ paper.name }}</td>
-        <td>{{ paper.finished_date }}</td>
-        <td>{{ paper.rating }}</td>
+        <td>{{ paper.conf }}</td>
+        <td>{{ paper.year }}</td>
+        <td>{{ paper.fin_date }}</td>
     </tr>
 {% endfor %}
     </tbody>

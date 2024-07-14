@@ -1,0 +1,5 @@
+- name: "The eXpress Data Path: Fast Programmable Packet Processing in the Operating System Kernel"
+  conf: "CoNEXT"
+  year: 2018
+  link: https://dl.acm.org/doi/10.1145/3281411.3281443
+  fin_date: '2024-07-14'

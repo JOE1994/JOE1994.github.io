@@ -26,6 +26,8 @@ layout: default
   * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
   * [Warn consecutive builtin comparisons in an expression](https://github.com/llvm/llvm-project/pull/92200)
   * [Don't emit 'declared here' note for builtin functions with no decl in source](https://github.com/llvm/llvm-project/pull/93394)
+* `Clang`
+  * [Prevent dangling `StringRef`s that lead to use-after-free bug](cce/master.20240716202438_7934e61602de0159b2d07f7ed26b1f552671f375-debug)
 * `LLVM`
   * [Opaque pointer](https://llvm.org/docs/OpaquePointers.html) clean-up
     * Remove old APIs which are no longer needed with opaque pointers

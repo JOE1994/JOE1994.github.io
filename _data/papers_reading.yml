@@ -1,8 +1,3 @@
-- name: "Don't Look UB: Exposing Sanitizer-Eliding Compiler Optimizations"
-  conf: "PLDI"
-  year: 2023
-  link: https://dl.acm.org/doi/10.1145/3591257
-
 - name: "An Empirical Study of Rust-for-Linux: The Success, Dissatisfaction, and Compromise"
   conf: USENIX ATC
   year: 2024

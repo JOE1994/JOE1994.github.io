@@ -3,3 +3,9 @@
   year: 2018
   link: https://dl.acm.org/doi/10.1145/3281411.3281443
   fin_date: '2024-07-14'
+
+- name: "Don't Look UB: Exposing Sanitizer-Eliding Compiler Optimizations"
+  conf: "PLDI"
+  year: 2023
+  link: https://dl.acm.org/doi/10.1145/3591257
+  fin_date: '2024-07-22'

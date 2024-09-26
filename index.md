@@ -34,6 +34,7 @@ layout: default
     * Remove no-op ptr-to-ptr bitcasts
     * Special thanks to [@nikic](https://github.com/nikic) & [@s-barannikov](https://github.com/s-barannikov) for reviewing my initial commits!
   * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
+  * Remove `.flush()` calls on the always unbuffered [`llvm::raw_string_ostream`](https://llvm.org/doxygen/classllvm_1_1raw__string__ostream.html)
 * [Verify 69 old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
 
 ### ["Writing an OS in Rust"](https://github.com/phil-opp/blog_os/commits?author=JOE1994) Blog (edition-2)

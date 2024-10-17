@@ -20,7 +20,7 @@ layout: default
 ## Open-Source Contributions
 
 ### [llvm-project](https://github.com/llvm/llvm-project/commits?author=JOE1994)
-* `Clang` : diagnostics
+* `Clang` diagnostics
   * [Warn unused cxx vardecl which entirely consists condition expr of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
   * [Warn when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
   * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
@@ -34,6 +34,7 @@ layout: default
     * Remove no-op ptr-to-ptr bitcasts
     * Special thanks to [@nikic](https://github.com/nikic) & [@s-barannikov](https://github.com/s-barannikov) for reviewing my initial commits!
   * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
+  * [[loop-reduce] Fix assertion failure due to violated invariant](https://github.com/llvm/llvm-project/pull/112576)
   * Remove `.flush()` calls on the always unbuffered [`llvm::raw_string_ostream`](https://llvm.org/doxygen/classllvm_1_1raw__string__ostream.html)
 * [Verify 69 old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
 

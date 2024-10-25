@@ -33,10 +33,12 @@ layout: default
     * Remove old APIs which are no longer needed with opaque pointers
     * Remove no-op ptr-to-ptr bitcasts
     * Special thanks to [@nikic](https://github.com/nikic) & [@s-barannikov](https://github.com/s-barannikov) for reviewing my initial commits!
-  * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
   * [[loop-reduce] Fix assertion failure due to violated invariant](https://github.com/llvm/llvm-project/pull/112576)
   * Remove `.flush()` calls on the always unbuffered [`llvm::raw_string_ostream`](https://llvm.org/doxygen/classllvm_1_1raw__string__ostream.html)
-* [Verify 69 old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
+  * [Verify 69 old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
+* `LLVM` NVPTX backend
+  * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
+  * [Don't emit extraneous +0 immediate offset part in PTX loads & stores](https://github.com/llvm/llvm-project/pull/113017)
 
 ### ["Writing an OS in Rust"](https://github.com/phil-opp/blog_os/commits?author=JOE1994) Blog (edition-2)
 * Authored official Korean translation of chapters 1 ~ 7

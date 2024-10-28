@@ -19,7 +19,7 @@ layout: default
 
 ## Open-Source Contributions
 
-### [llvm-project](https://github.com/llvm/llvm-project/commits?author=JOE1994)
+### [LLVM](https://github.com/llvm/llvm-project/commits?author=JOE1994) Compiler Infrastructure
 * `Clang` diagnostics
   * [Warn unused cxx vardecl which entirely consists condition expr of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
   * [Warn when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)

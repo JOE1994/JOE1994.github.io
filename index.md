@@ -37,6 +37,7 @@ layout: default
   * Remove `.flush()` calls on the always unbuffered [`llvm::raw_string_ostream`](https://llvm.org/doxygen/classllvm_1_1raw__string__ostream.html)
   * [Verify 69 old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
 * `LLVM` NVPTX backend
+  * [Don't reorder or split up MIs that must stick together to construct a valid PTX function call](https://github.com/llvm/llvm-project/pull/116522)
   * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
   * [Don't emit extraneous +0 immediate offset part in PTX loads & stores](https://github.com/llvm/llvm-project/pull/113017)
 

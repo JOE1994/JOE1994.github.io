@@ -33,8 +33,8 @@ layout: default
   * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
   * [Don't emit extraneous +0 immediate offset part in PTX loads & stores](https://github.com/llvm/llvm-project/pull/113017)
 * `Clang` Diagnostics
-  * [Warn const integer-overflow of member in temporary struct bound to rvalue reference](https://github.com/llvm/llvm-project/pull/117225)
-  * [Warn unused cxx vardecl which entirely consists condition expr of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
+  * [Warn const integer-overflow in member of temp struct bound to rvalue-ref](https://github.com/llvm/llvm-project/pull/117225)
+  * [Warn unused cxx vardecl which consists condition of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
   * [Warn when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
   * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
   * [Warn consecutive builtin comparisons in an expression](https://github.com/llvm/llvm-project/pull/92200)

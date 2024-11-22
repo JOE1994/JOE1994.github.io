@@ -20,14 +20,6 @@ layout: default
 ## Open-Source Contributions
 
 ### [LLVM](https://github.com/llvm/llvm-project/commits?author=JOE1994) Compiler Infrastructure
-* `Clang` diagnostics
-  * [Warn unused cxx vardecl which entirely consists condition expr of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
-  * [Warn when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
-  * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
-  * [Warn consecutive builtin comparisons in an expression](https://github.com/llvm/llvm-project/pull/92200)
-  * [Don't emit 'declared here' note for builtin functions with no decl in source](https://github.com/llvm/llvm-project/pull/93394)
-* `Clang`
-  * [Prevent dangling `StringRef`s that lead to use-after-free bug](cce/master.20240716202438_7934e61602de0159b2d07f7ed26b1f552671f375-debug)
 * `LLVM`
   * [Opaque pointer](https://llvm.org/docs/OpaquePointers.html) clean-up
     * Remove old APIs which are no longer needed with opaque pointers
@@ -36,10 +28,19 @@ layout: default
   * [[loop-reduce] Fix assertion failure due to violated invariant](https://github.com/llvm/llvm-project/pull/112576)
   * Remove `.flush()` calls on the always unbuffered [`llvm::raw_string_ostream`](https://llvm.org/doxygen/classllvm_1_1raw__string__ostream.html)
   * [Verify 69 old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
-* `LLVM` NVPTX backend
-  * [Don't reorder or split up MIs that must stick together to construct a valid PTX function call](https://github.com/llvm/llvm-project/pull/116522)
+* `LLVM` NVPTX Backend
+  * [Don't reorder or split up MIs that must stick together to comprise a PTX function call](https://github.com/llvm/llvm-project/pull/116522)
   * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
   * [Don't emit extraneous +0 immediate offset part in PTX loads & stores](https://github.com/llvm/llvm-project/pull/113017)
+* `Clang` Diagnostics
+  * [Warn const integer-overflow of member in temporary struct bound to rvalue reference](https://github.com/llvm/llvm-project/pull/117225)
+  * [Warn unused cxx vardecl which entirely consists condition expr of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
+  * [Warn when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
+  * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
+  * [Warn consecutive builtin comparisons in an expression](https://github.com/llvm/llvm-project/pull/92200)
+  * [Don't emit 'declared here' note for builtin functions with no decl in source](https://github.com/llvm/llvm-project/pull/93394)
+* `Clang`
+  * [Prevent dangling `StringRef`s that lead to use-after-free bug](cce/master.20240716202438_7934e61602de0159b2d07f7ed26b1f552671f375-debug)
 
 ### ["Writing an OS in Rust"](https://github.com/phil-opp/blog_os/commits?author=JOE1994) Blog (edition-2)
 * Authored official Korean translation of chapters 1 ~ 7

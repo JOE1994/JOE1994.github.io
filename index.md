@@ -27,7 +27,7 @@ layout: default
     * Special thanks to [@nikic](https://github.com/nikic) & [@s-barannikov](https://github.com/s-barannikov) for reviewing my initial commits!
   * [[loop-reduce] Fix assertion failure due to violated invariant](https://github.com/llvm/llvm-project/pull/112576)
   * Remove `.flush()` calls on the always unbuffered [`llvm::raw_string_ostream`](https://llvm.org/doxygen/classllvm_1_1raw__string__ostream.html)
-  * [Verify 69 old bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
+  * [Verify 70+ bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
 * `LLVM` NVPTX Backend
   * [Don't reorder or split up MIs that must stick together to comprise a PTX function call](https://github.com/llvm/llvm-project/pull/116522)
   * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)

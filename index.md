@@ -40,7 +40,7 @@ layout: default
   * [Warn consecutive builtin comparisons in an expression](https://github.com/llvm/llvm-project/pull/92200)
   * [Don't emit 'declared here' note for builtin functions with no decl in source](https://github.com/llvm/llvm-project/pull/93394)
 * `Clang`
-  * [Prevent dangling `StringRef`s that lead to use-after-free bug](cce/master.20240716202438_7934e61602de0159b2d07f7ed26b1f552671f375-debug)
+  * [Prevent dangling `StringRef`s that lead to use-after-free bug](https://github.com/llvm/llvm-project/pull/98699)
 
 ### ["Writing an OS in Rust"](https://github.com/phil-opp/blog_os/commits?author=JOE1994) Blog (edition-2)
 * Authored official Korean translation of chapters 1 ~ 7

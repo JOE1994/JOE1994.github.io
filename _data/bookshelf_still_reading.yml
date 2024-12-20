@@ -75,7 +75,3 @@
 - name: "Modern Fortran explained: Incorporating Fortran 2023"
   progress: 26
   tot_pages: 516
-
-- name: "Test Driven Development: By Example"
-  progress: 18
-  tot_pages: 32

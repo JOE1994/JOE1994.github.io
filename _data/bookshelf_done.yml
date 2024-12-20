@@ -29,3 +29,7 @@
 - name: "만화로 쉽게 배우는 양자역학"
   finished_date: '2024-09-04'
   rating: 4/5
+
+- name: "Test Driven Development: By Example"
+  finished_date: '2024-12-20'
+  rating: 3/5

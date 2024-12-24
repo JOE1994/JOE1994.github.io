@@ -9,3 +9,9 @@
   year: 2023
   link: https://dl.acm.org/doi/10.1145/3591257
   fin_date: '2024-07-22'
+
+- name: "An Empirical Study of Rust-for-Linux: The Success, Dissatisfaction, and Compromise"
+  conf: "USENIX ATC"
+  year: 2024
+  link: https://www.usenix.org/conference/atc24/presentation/li-hongyu
+  fin_date: '2024-12-24'

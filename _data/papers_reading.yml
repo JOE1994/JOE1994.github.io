@@ -7,3 +7,8 @@
   conf: "CGO"
   year: 2019
   link: https://research.facebook.com/publications/bolt-a-practical-binary-optimizer-for-data-centers-and-beyond/
+
+- name: "Basic Linear Algebra Subprograms for Fortran Usage"
+  conf: "TOMS"
+  year: 1979
+  link: https://dl.acm.org/doi/10.1145/355841.355847

@@ -79,3 +79,7 @@
 - name: "Advanced C and C++ Compiling"
   progress: 5
   tot_pages: 14
+
+- name: "The OpenMP Common Core"
+  progress: 60
+  tot_pages: 435

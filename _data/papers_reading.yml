@@ -12,3 +12,8 @@
   conf: "TOMS"
   year: 1979
   link: https://dl.acm.org/doi/10.1145/355841.355847
+
+- name: "How to Build a Quantum Supercomputer: Scaling from Hundreds to Millions of Qubits"
+  conf: "arXiv"
+  year: 2024
+  link: https://arxiv.org/abs/2411.10406

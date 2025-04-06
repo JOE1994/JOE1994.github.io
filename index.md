@@ -5,7 +5,7 @@ layout: default
 # Youngsuk Kim (김영석)
 
 ## Work History
-* Systems Software Engineer 2 @ Hewlett Packard Enterprise (Sep 2021 - Now)
+* Systems Software Engineer 2 @ Hewlett Packard Enterprise (Sep 2021 - Apr 2025)
 * Clang/LLVM Compiler Intern @ Hewlett Packard Enterprise (May 2021 - Aug 2021)
 
 ## Education

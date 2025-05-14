@@ -17,3 +17,8 @@
   conf: "arXiv"
   year: 2024
   link: https://arxiv.org/abs/2411.10406
+
+- name: "Efficient Memory Management for Large Language Model Serving with PagedAttention"
+  conf: "SOSP"
+  year: 2023
+  link: https://dl.acm.org/doi/10.1145/3600006.3613165

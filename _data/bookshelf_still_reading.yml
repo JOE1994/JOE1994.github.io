@@ -69,7 +69,7 @@
   tot_pages: 615
 
 - name: "Learning eBPF"
-  progress: 25
+  progress: 45
   tot_pages: 371
 
 - name: "Modern Fortran explained: Incorporating Fortran 2023"

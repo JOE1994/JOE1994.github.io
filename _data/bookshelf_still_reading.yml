@@ -83,3 +83,7 @@
 - name: "The OpenMP Common Core"
   progress: 254
   tot_pages: 435
+
+- name: "LLVM Code Generation: A deep dive into compiler backend development"
+  progress: 87
+  tot_pages: 608

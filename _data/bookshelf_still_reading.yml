@@ -87,3 +87,7 @@
 - name: "LLVM Code Generation: A deep dive into compiler backend development"
   progress: 87
   tot_pages: 608
+
+- name: "System Design Vol. 1"
+  progress: 14
+  tot_pages: 269

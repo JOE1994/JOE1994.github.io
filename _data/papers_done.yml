@@ -21,3 +21,9 @@
   year: 2025
   link: https://dl.acm.org/doi/10.1109/cgo51591.2021.9370308
   fin_date: '2025-04-08'
+
+- name: "Cores that don't count"
+  conf: "HotOS"
+  year: 2021
+  link: https://dl.acm.org/doi/10.1145/3458336.3465297
+  fin_date: '2025-07-13'

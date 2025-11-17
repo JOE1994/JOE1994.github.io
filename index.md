@@ -30,18 +30,18 @@ layout: default
   * Remove `.flush()` calls on the always unbuffered [`llvm::raw_string_ostream`](https://llvm.org/doxygen/classllvm_1_1raw__string__ostream.html)
   * [Verify 70+ bugs from LLVM Bugzilla](https://github.com/llvm/llvm-project/issues?q=label%3Abugzilla+commenter%3AJOE1994)
 * `LLVM` NVPTX Backend
-  * [Don't reorder or split up MIs that must stick together to comprise a PTX function call](https://github.com/llvm/llvm-project/pull/116522)
-  * [Prevent emitting dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
-  * [Don't emit extraneous +0 immediate offset part in PTX loads & stores](https://github.com/llvm/llvm-project/pull/113017)
+  * [Don't reorder/split-up MIs that must stick together to comprise a PTX function call](https://github.com/llvm/llvm-project/pull/116522)
+  * [Don't emit dead PTX `.reg` variable](https://github.com/llvm/llvm-project/pull/89004)
+  * [Don't emit extraneous +0 immediate offset in PTX loads & stores](https://github.com/llvm/llvm-project/pull/113017)
 * `Clang` Diagnostics
   * [Warn const integer-overflow in member of temp struct bound to rvalue-ref](https://github.com/llvm/llvm-project/pull/117225)
   * [Warn unused cxx vardecl which consists condition of if/while/for construct](https://github.com/llvm/llvm-project/pull/87348)
   * [Warn when a function returns pointer/reference to a struct literal](https://github.com/llvm/llvm-project/pull/83741)
-  * [Prevent running duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
+  * [Don't run duplicate semantic checks on AST](https://github.com/llvm/llvm-project/pull/90625)
   * [Warn consecutive builtin comparisons in an expression](https://github.com/llvm/llvm-project/pull/92200)
   * [Don't emit 'declared here' note for builtin functions with no decl in source](https://github.com/llvm/llvm-project/pull/93394)
 * `Clang`
-  * [Prevent dangling `StringRef`s that lead to use-after-free bug](https://github.com/llvm/llvm-project/pull/98699)
+  * [Prevent dangling `StringRef`s that lead to use-after-free](https://github.com/llvm/llvm-project/pull/98699)
 
 ### ["Writing an OS in Rust"](https://github.com/phil-opp/blog_os/commits?author=JOE1994) Blog (edition-2)
 * Authored official Korean translation of chapters 1 ~ 7

@@ -1,15 +1,3 @@
-- name: "12 Rules for Life: An Antidote to Chaos"
-  finished_date: '2023-03-17'
-  rating: 4/5
-
-- name: "How to Fail at Almost Everything and Still Win Big: Kind of the Story of My Life"
-  finished_date: '2023-06-13'
-  rating: 4/5
-
-- name: "The Lords of Easy Money"
-  finished_date: '2023-10-27'
-  rating: 5/5
-
 - name: "Chip War: The Fight for the World's Most Critical Technology"
   finished_date: '2024-01-09'
   rating: 5/5
@@ -18,34 +6,10 @@
   finished_date: '2024-03-23'
   rating: 4/5
 
-- name: "Why Fish Don't Exist: A Story of Loss, Love, and the Hidden Order of Life"
-  finished_date: '2024-04-10'
-  rating: 5/5
-
-- name: "Kochland: The Secret History of Koch Industries and Corporate Power in America"
-  finished_date: '2024-06-28'
-  rating: 5/5
-
-- name: "만화로 쉽게 배우는 양자역학"
-  finished_date: '2024-09-04'
-  rating: 4/5
-
 - name: "Test Driven Development: By Example"
   finished_date: '2024-12-20'
   rating: 3/5
 
 - name: "The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change"
   finished_date: '2025-10-18'
-  rating: 5/5
-
-- name: "Pyongyang: A Journey in North Korea"
-  finished_date: '2025-11-09'
-  rating: 4/5
-
-- name: "Crying in H Mart"
-  finished_date: '2026-01-25'
-  rating: 4/5
-
-- name: "In Order to Live: A North Korean Girl's Journey to Freedom"
-  finished_date: '2026-05-11'
   rating: 5/5

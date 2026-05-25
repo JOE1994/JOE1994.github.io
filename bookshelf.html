@@ -4,11 +4,14 @@ title: bookshelf
 ---
 
 <div>
-<button class = "view-select-button" id = "show-still-reading" type="button">
+<button class = "view-select-button" id = "show-rip" type="button">
     Reading-In-Progress
 </button>
-<button class = "view-select-button" id = "show-finished-reading" type="button">
-    Finished-Reading
+<button class = "view-select-button" id = "show-fin-reading" type="button">
+    Finished (CS/Engineering)
+</button>
+<button class = "view-select-button" id = "show-fin-reading-etc" type="button">
+    Finished (Etc)
 </button>
 </div>
 
@@ -50,6 +53,26 @@ title: bookshelf
     </tbody>
 </table>
 
+<tabie id = "finished-reading-etc" class="bookshelf-table">
+    <thead>
+        <tr>
+            <th>Book Title</th>
+            <th>Finished Date</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+
+    <tbody>
+{% for book in site.data.bookshelf_done_etc %}
+    <tr>
+        <td>{{ book.name }}</td>
+        <td>{{ book.finished_date }}</td>
+        <td>{{ book.rating }}</td>
+    </tr>
+{% endfor %}
+    </tbody>
+</tabie>
+
 <style>
     #still-reading {
         display: block;
@@ -78,11 +101,13 @@ title: bookshelf
 </style>
 
 <script>
-    let still_reading = document.getElementById("still-reading");
-    let finished_reading = document.getElementById("finished-reading");
+    const still_reading = document.getElementById("still-reading");
+    const finished_reading = document.getElementById("finished-reading");
+    const finished_reading_etc = document.getElementById("finished-reading-etc");
     
-    let button0 = document.getElementById("show-still-reading");
-    let button1 = document.getElementById("show-finished-reading");
+    const button0 = document.getElementById("show-rip");
+    const button1 = document.getElementById("show-fin-reading");
+    const button2 = document.getElementById("show-fin-reading-etc");
 
     const active_bg_color = "#ac4142";
     const inactive_bg_color = "rgb(234, 194, 194)";
@@ -91,15 +116,29 @@ title: bookshelf
     .addEventListener("click", () => {
         still_reading.style.display = "block";
         finished_reading.style.display = "none";
+        finished_reading_etc.style.display = "none";
         button0.style.backgroundColor = active_bg_color;
         button1.style.backgroundColor = inactive_bg_color;
+        button2.style.backgroundColor = inactive_bg_color;
     });
     
     button1
     .addEventListener("click", () => {
         still_reading.style.display = "none";
         finished_reading.style.display = "block";
-        button1.style.backgroundColor = active_bg_color;
+        finished_reading_etc.style.display = "none";
         button0.style.backgroundColor = inactive_bg_color;
+        button1.style.backgroundColor = active_bg_color;
+        button2.style.backgroundColor = inactive_bg_color;
+    });
+
+    button2
+    .addEventListener("click", () => {
+        still_reading.style.display = "none";
+        finished_reading.style.display = "none";
+        finished_reading_etc.style.display = "block";
+        button1.style.backgroundColor = inactive_bg_color;
+        button0.style.backgroundColor = inactive_bg_color;
+        button2.style.backgroundColor = active_bg_color;
     });
 </script>

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Youngsuk Kim (김영석)
+# Youngsuk Kim (김영석 ; 金泳錫)
 
 ## Work History
 * Senior Software Engineer @ Qualcomm (Jul 2025 - Now)

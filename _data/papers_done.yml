@@ -27,3 +27,9 @@
   year: 2021
   link: https://dl.acm.org/doi/10.1145/3458336.3465297
   fin_date: '2025-07-13'
+
+- name: "Linear Scan Register Allocation"
+  conf: TOPLAS
+  year: 1999
+  link: https://dl.acm.org/doi/10.1145/330249.330250
+  fin_date: '2026-10-08'
